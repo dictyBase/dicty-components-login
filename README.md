@@ -1,16 +1,44 @@
 # dicty-components-login
 
 [![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
+[![dependencies Status](https://david-dm.org/dictyBase/dicty-components-login/status.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-login)
+[![devDependencies Status](https://david-dm.org/dictyBase/dicty-components-login/dev-status.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-login?type=dev)
+[![peerDependencies Status](https://david-dm.org/dictyBase/dicty-components-login/peer-status.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-login?type=peer)
 
-Describe dicty-components-login here.
+React component for displaying the social login buttons in all dictyBase web applications.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## Install
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+`npm i dictyBase/dicty-components-login --save`
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+For a particular version(checks tags/release first)  
+ `npm i dictyBase/dicty-components-login#v1.0.0 --save`
+
+## Usage
+
+`import {Login} from "dicty-components-login`
+
+## Development
+
+* Clone the `develop` branch of this repository
+* Run `npm install`
+* Create a feature branch(feature/foo) or `bug/foo` or `documentation/foo` or
+  `refactor/foo`, whatever suits the purpose of development
+* To run a demo during development  
+  `npm run start`
+* Write tests in the same folder as the component. Snapshot testing is recommended.
+* At the end of development, `npm run test:run` should pass.
+* Write documentation using `styleguidist` and build it using `npm run styleguide:build`.
+* Run `npm run build` to generate the library.
+* Commit all the changes and either merge to develop or send a pull request.
+
+## Tagging
+
+* Run `git tag -a v1.0.0 -m "version 1.0.0"` where the version number is the one that needs to be updated
+* Push tag to branch, i.e. `git push origin v1.0.0`
+
+[build-badge]: https://travis-ci.org/dictyBase/dicty-components-login.svg?branch=develop
+[build]: https://travis-ci.org/dictyBase/dicty-components-login
+[coveralls-badge]: https://coveralls.io/repos/github/dictyBase/dicty-components-login/badge.svg?branch=develop
+[coveralls]: https://coveralls.io/github/dictyBase/dicty-components-login?branch=develop
