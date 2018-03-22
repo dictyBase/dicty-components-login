@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import { Flex, Box } from "rebass"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
