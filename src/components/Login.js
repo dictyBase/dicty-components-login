@@ -7,6 +7,10 @@ import FacebookButton from "./FacebookButton"
 import LinkedInButton from "./LinkedInButton"
 import OrcidButton from "./OrcidButton"
 
+/**
+ * This is the main login component that puts all of the individual social buttons in one place.
+ */
+
 const Login = () => {
   return (
     <Flex justify="center">

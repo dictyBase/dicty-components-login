@@ -8,6 +8,10 @@ import {
   FacebookButtonContainer
 } from "../styles/Buttons"
 
+/**
+ * This is the Facebook social button. It has a FontAwesome icon and then some sign in text.
+ */
+
 const FacebookButton = () => {
   return (
     <Flex justify="center">

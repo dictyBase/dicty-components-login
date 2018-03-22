@@ -8,6 +8,10 @@ import {
   GoogleButtonContainer
 } from "../styles/Buttons"
 
+/**
+ * This is the Google social button. It has a FontAwesome icon and then some sign in text.
+ */
+
 const GoogleButton = () => {
   return (
     <Flex justify="center">

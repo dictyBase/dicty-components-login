@@ -6,6 +6,10 @@ import {
   OrcidButtonContainer
 } from "../styles/Buttons"
 
+/**
+ * This is the ORCID social button. Since there is not an appropriate FontAwesome icon for this organization, we are currently using a nonbreaking space instead to keep the styling identical.
+ */
+
 const OrcidButton = () => {
   return (
     <Flex justify="center">

@@ -8,6 +8,10 @@ import {
   LinkedInButtonContainer
 } from "../styles/Buttons"
 
+/**
+ * This is the LinkedIn social button. It has a FontAwesome icon and then some sign in text.
+ */
+
 const LinkedInButton = () => {
   return (
     <Flex justify="center">
