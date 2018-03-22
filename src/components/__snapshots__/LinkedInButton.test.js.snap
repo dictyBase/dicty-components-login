@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of LinkedInButton 1`] = `
+.c1 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  border-right: 1px solid black;
+  line-height: 45px;
+  width: 45px;
+  font-size: 1.8em;
+}
+
+.c3 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  padding-left: 21px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  color: #fff;
+  border-color: rgba(0,0,0,0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: #007bb6;
+}
+
+.c3.block {
+  display: block;
+  width: 100%;
+}
+
+.c3.large {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.c3.xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  width: 20%;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus,
+.c3:hover,
+.c3:active {
+  color: #fff;
+  background-color: #005983;
+  border-color: rgba(0,0,0,0.2);
+}
+
+<div
+  className="c0 c1"
+  is={null}
+>
+  <div
+    className="c2"
+    is={null}
+  >
+    <a
+      className="c3"
+    >
+      <i
+        className="c4"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-linkedin-in fa-w-14 "
+          data-icon="linkedin-in"
+          data-prefix="fab"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </i>
+        Sign in with LinkedIn
+    </a>
+  </div>
+</div>
+`;
