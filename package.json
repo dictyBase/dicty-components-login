@@ -36,8 +36,10 @@
     "@fortawesome/fontawesome": "^1.1.4",
     "@fortawesome/fontawesome-free-brands": "^5.0.8",
     "@fortawesome/react-fontawesome": "0.0.17",
+    "material-ui": "^1.0.0-beta.38",
     "rebass": "^1.0.7",
-    "styled-components": "^3.2.3"
+    "styled-components": "^3.2.3",
+    "typeface-roboto": "0.0.54"
   },
   "peerDependencies": {
     "react": "16.x"
