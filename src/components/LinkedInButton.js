@@ -5,7 +5,7 @@ import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import faLinkedinIn from "@fortawesome/fontawesome-free-brands/faLinkedinIn"
 import {
   FontAwesomeIconContainer,
-  LinkedInButtonContainer
+  LinkedInButtonStyle
 } from "../styles/Buttons"
 
 /**
@@ -16,12 +16,12 @@ const LinkedInButton = () => {
   return (
     <Flex justify="center">
       <Box w={"90%"} mb={"5px"}>
-        <LinkedInButtonContainer>
+        <LinkedInButtonStyle size="large" variant="raised">
           <FontAwesomeIconContainer>
             <FontAwesomeIcon icon={faLinkedinIn} />
           </FontAwesomeIconContainer>
           &nbsp; Sign in with LinkedIn
-        </LinkedInButtonContainer>
+        </LinkedInButtonStyle>
       </Box>
     </Flex>
   )

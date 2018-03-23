@@ -5,7 +5,7 @@ import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import faFacebookF from "@fortawesome/fontawesome-free-brands/faFacebookF"
 import {
   FontAwesomeIconContainer,
-  FacebookButtonContainer
+  FacebookButtonStyle
 } from "../styles/Buttons"
 
 /**
@@ -16,11 +16,11 @@ const FacebookButton = () => {
   return (
     <Flex justify="center">
       <Box w={"90%"} mb={"5px"}>
-        <FacebookButtonContainer>
+        <FacebookButtonStyle size="large" variant="raised">
           <FontAwesomeIconContainer>
             <FontAwesomeIcon icon={faFacebookF} />
           </FontAwesomeIconContainer>&nbsp; Sign in with Facebook
-        </FacebookButtonContainer>
+        </FacebookButtonStyle>
       </Box>
     </Flex>
   )
