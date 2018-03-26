@@ -1,12 +1,12 @@
-import React, { Component } from "react"
+import React from "react"
 import { render } from "react-dom"
 
 import Login from "../../src/components/Login"
 
-class Demo extends Component {
-  render() {
-    return <Login />
-  }
+const buttons = ["Google", "Facebook", "LinkedIn", "ORCID"]
+
+const Demo = () => {
+  return <Login buttons={buttons} />
 }
 
 render(<Demo />, document.querySelector("#demo"))
