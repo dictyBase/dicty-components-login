@@ -4,16 +4,24 @@ import Button from "material-ui/Button"
 
 // export const LinkButton = Button.withComponent("a")
 
+export const DefaultButton = styled(Button)`
+  && {
+    color: #fff;
+    width: 80%;
+    justify-content: start;
+  }
+`
+
 export const FontAwesomeIconContainer = styled.i`
   border-right: 1px solid black;
   line-height: 45px;
   width: 45px;
   font-size: 1.8em;
+  text-align: left;
 `
 
-export const GoogleButtonStyle = styled(Button)`
+export const GoogleButtonStyle = styled(DefaultButton)`
   && {
-    color: #fff;
     background-color: #dd4b39;
 
     &:focus,
@@ -26,10 +34,9 @@ export const GoogleButtonStyle = styled(Button)`
   }
 `
 
-export const FacebookButtonStyle = styled(Button)`
+export const FacebookButtonStyle = styled(DefaultButton)`
   && {
     background-color: #3b5998;
-    color: #fff;
 
     &:focus,
     &:hover,
@@ -41,10 +48,9 @@ export const FacebookButtonStyle = styled(Button)`
   }
 `
 
-export const LinkedInButtonStyle = styled(Button)`
+export const LinkedInButtonStyle = styled(DefaultButton)`
   && {
     background-color: #007bb6;
-    color: #fff;
 
     &:focus,
     &:hover,
@@ -56,10 +62,9 @@ export const LinkedInButtonStyle = styled(Button)`
   }
 `
 
-export const OrcidButtonStyle = styled(Button)`
+export const OrcidButtonStyle = styled(DefaultButton)`
   && {
     background-color: #a6ce39;
-    color: #fff;
 
     &:focus,
     &:hover,
