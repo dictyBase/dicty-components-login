@@ -13,21 +13,21 @@ export const DefaultButton = styled(Button)`
 
     /* Set up custom props */
     background-color: ${props => {
-      return props.theme.Google
+      return props.theme.google
         ? "#15317e"
-        : props.theme.Facebook
+        : props.theme.facebook
           ? "#3b5998"
-          : props.theme.Linkedin
+          : props.theme.linkedin
             ? "#A3BAE9"
-            : props.theme.Orcid ? "#a6ce39" : "palevioletred"
+            : props.theme.orcid ? "#a6ce39" : "palevioletred"
     }};
   }
 `
 export const theme = {
-  Google: "#dd4b39",
-  Facebook: "#3b5998",
-  Linkedin: "#005983",
-  Orcid: "#a6ce39"
+  google: "#dd4b39",
+  facebook: "#3b5998",
+  linkedin: "#005983",
+  orcid: "#a6ce39"
 }
 
 export const FontAwesomeIconContainer = styled.i`

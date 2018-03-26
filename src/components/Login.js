@@ -9,9 +9,7 @@ import {
   theme
 } from "../styles/Buttons"
 import { Container } from "../styles/Container"
-import faGoogle from "@fortawesome/fontawesome-free-brands/faGoogle"
-import faFacebookF from "@fortawesome/fontawesome-free-brands/faFacebookF"
-import faLinkedinIn from "@fortawesome/fontawesome-free-brands/faLinkedinIn"
+import brands from "@fortawesome/fontawesome-free-brands"
 
 /**
  * This is the main login component that puts all of the individual social buttons in one place.
@@ -23,7 +21,7 @@ const loginButtons = buttons => {
       <Box w={"90%"} mb={"5px"}>
         <DefaultButton size="large" variant="raised" theme={name}>
           <FontAwesomeIconContainer>
-            <FontAwesomeIcon icon={`fa${name}` || ""} />
+            <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
           </FontAwesomeIconContainer>
           &nbsp; Sign in with {name}
         </DefaultButton>
