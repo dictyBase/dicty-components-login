@@ -17,9 +17,9 @@ import { Container } from "../styles/Container"
 
 const styles = {
   google: "#dd4b39",
-  facebook: "#dd4b39",
-  linkedin: "#dd4b39",
-  orcid: "#dd4b39"
+  facebook: "#3b5998",
+  linkedin: "#005983",
+  orcid: "#a6ce39"
 }
 
 const generateLoginButtons = buttons => {
@@ -27,7 +27,7 @@ const generateLoginButtons = buttons => {
     <DefaultButton
       size="large"
       variant="raised"
-      style={{ backgroundColor: `${styles}.${name}`, marginBottom: "5px" }}
+      style={{ backgroundColor: `${styles[name]}`, marginBottom: "5px" }}
       key={i}>
       <FontAwesomeIconContainer>
         <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
