@@ -10,16 +10,11 @@ export const DefaultButton = styled(Button)`
     color: #fff;
     width: 80%;
     justify-content: start;
+    background-color: palevioletred;
 
-    /* Set up custom props */
-    background-color: ${props =>
-      props.theme.google
-        ? "#15317e"
-        : props.theme.facebook
-          ? "#3b5998"
-          : props.theme.linkedin
-            ? "#A3BAE9"
-            : props.theme.orcid ? "#a6ce39" : "palevioletred"};
+    .google {
+      background-color: #dd4b39;
+    }
   }
 `
 export const theme = {

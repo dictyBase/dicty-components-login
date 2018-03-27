@@ -1,7 +1,8 @@
 // @flow
 import React from "react"
-import { Flex, Box } from "rebass"
+import Grid from "material-ui/Grid"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
+import brands from "@fortawesome/fontawesome-free-brands"
 import { ThemeProvider } from "styled-components"
 import {
   FontAwesomeIconContainer,
@@ -9,15 +10,25 @@ import {
   theme
 } from "../styles/Buttons"
 import { Container } from "../styles/Container"
-import brands from "@fortawesome/fontawesome-free-brands"
 
 /**
  * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
  */
 
+const styles = {
+  google: "#dd4b39",
+  facebook: "#dd4b39",
+  linkedin: "#dd4b39",
+  orcid: "#dd4b39"
+}
+
 const generateLoginButtons = buttons => {
   return buttons.map((name, i) => (
-    <DefaultButton size="large" variant="raised" theme={name} key={i}>
+    <DefaultButton
+      size="large"
+      variant="raised"
+      style={{ backgroundColor: `${styles}.${name}`, marginBottom: "5px" }}
+      key={i}>
       <FontAwesomeIconContainer>
         <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
       </FontAwesomeIconContainer>
@@ -30,15 +41,15 @@ const Login = ({ buttons }) => {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Flex justify="center">
-          <Box w={[1, 3 / 4, "60%", "40%"]}>
-            <Flex justify="center">
-              <Box w={"90%"} mb={"5px"}>
+        <Grid container justify="center">
+          <Grid item xs={6}>
+            <Grid container justify="center">
+              <Grid item xs={9}>
                 {generateLoginButtons(buttons)}
-              </Box>
-            </Flex>
-          </Box>
-        </Flex>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
       </Container>
     </ThemeProvider>
   )
