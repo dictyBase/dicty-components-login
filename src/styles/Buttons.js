@@ -12,15 +12,14 @@ export const DefaultButton = styled(Button)`
     justify-content: start;
 
     /* Set up custom props */
-    background-color: ${props => {
-      return props.theme.google
+    background-color: ${props =>
+      props.theme.google
         ? "#15317e"
         : props.theme.facebook
           ? "#3b5998"
           : props.theme.linkedin
             ? "#A3BAE9"
-            : props.theme.orcid ? "#a6ce39" : "palevioletred"
-    }};
+            : props.theme.orcid ? "#a6ce39" : "palevioletred"};
   }
 `
 export const theme = {

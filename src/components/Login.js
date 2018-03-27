@@ -35,7 +35,7 @@ const Login = ({ buttons }) => {
     <ThemeProvider theme={theme}>
       <Container>
         <Flex justify="center">
-          <Box w={[1, 1 / 2, 1 / 3]}>{loginButtons(buttons)}</Box>
+          <Box w={[1, 3 / 4, "60%", "40%"]}>{loginButtons(buttons)}</Box>
         </Flex>
       </Container>
     </ThemeProvider>
