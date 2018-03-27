@@ -12,21 +12,17 @@ import { Container } from "../styles/Container"
 import brands from "@fortawesome/fontawesome-free-brands"
 
 /**
- * This is the main login component that puts all of the individual social buttons in one place.
+ * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
  */
 
-const loginButtons = buttons => {
+const generateLoginButtons = buttons => {
   return buttons.map((name, i) => (
-    <Flex justify="center" key={i}>
-      <Box w={"90%"} mb={"5px"}>
-        <DefaultButton size="large" variant="raised" theme={name}>
-          <FontAwesomeIconContainer>
-            <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
-          </FontAwesomeIconContainer>
-          &nbsp; Sign in with {name}
-        </DefaultButton>
-      </Box>
-    </Flex>
+    <DefaultButton size="large" variant="raised" theme={name} key={i}>
+      <FontAwesomeIconContainer>
+        <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
+      </FontAwesomeIconContainer>
+      &nbsp; Sign in with {name}
+    </DefaultButton>
   ))
 }
 
@@ -35,7 +31,13 @@ const Login = ({ buttons }) => {
     <ThemeProvider theme={theme}>
       <Container>
         <Flex justify="center">
-          <Box w={[1, 3 / 4, "60%", "40%"]}>{loginButtons(buttons)}</Box>
+          <Box w={[1, 3 / 4, "60%", "40%"]}>
+            <Flex justify="center">
+              <Box w={"90%"} mb={"5px"}>
+                {generateLoginButtons(buttons)}
+              </Box>
+            </Flex>
+          </Box>
         </Flex>
       </Container>
     </ThemeProvider>
