@@ -11,6 +11,7 @@ export const DefaultButton = styled(Button)`
     width: 80%;
     justify-content: start;
     background-color: palevioletred;
+    min-height: 55px;
 
     .google {
       background-color: #dd4b39;
