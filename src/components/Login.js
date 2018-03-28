@@ -3,7 +3,6 @@ import React from "react"
 import Grid from "material-ui/Grid"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import brands from "@fortawesome/fontawesome-free-brands"
-import { ThemeProvider } from "styled-components"
 import {
   FontAwesomeIconContainer,
   DefaultButton,
@@ -15,11 +14,11 @@ import { Container } from "../styles/Container"
  * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
  */
 
-const generateLoginButtons = buttons => {
+const generateLoginButtons = (buttons, size, variant) => {
   return buttons.map((name, i) => (
     <DefaultButton
-      size="large"
-      variant="raised"
+      size={size}
+      variant={variant}
       style={{ backgroundColor: `${styles[name]}` }}
       key={i}>
       <FontAwesomeIconContainer>
@@ -30,21 +29,27 @@ const generateLoginButtons = buttons => {
   ))
 }
 
-const Login = ({ buttons }) => {
+const Login = ({
+  buttons,
+  size,
+  variant
+}: {
+  buttons: Array<string>,
+  size: string,
+  variant: string
+}) => {
   return (
-    // <ThemeProvider theme={theme}>
     <Container>
       <Grid container justify="center">
         <Grid item xs={12} sm={9} md={6} lg={6}>
           <Grid container justify="center">
             <Grid item xs={9}>
-              {generateLoginButtons(buttons)}
+              {generateLoginButtons(buttons, size, variant)}
             </Grid>
           </Grid>
         </Grid>
       </Grid>
     </Container>
-    // </ThemeProvider>
   )
 }
 

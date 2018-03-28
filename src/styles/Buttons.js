@@ -2,9 +2,6 @@
 import styled from "styled-components"
 import Button from "material-ui/Button"
 
-// this export does not work with Material-UI but temporarily keeping it for reference
-// export const LinkButton = Button.withComponent("a")
-
 export const styles = {
   google: "#dd4b39",
   facebook: "#3b5998",
