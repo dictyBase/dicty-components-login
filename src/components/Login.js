@@ -35,7 +35,7 @@ const Login = ({ buttons }) => {
     // <ThemeProvider theme={theme}>
     <Container>
       <Grid container justify="center">
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={9} md={6} lg={6}>
           <Grid container justify="center">
             <Grid item xs={9}>
               {generateLoginButtons(buttons)}
