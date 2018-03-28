@@ -7,20 +7,13 @@ import { ThemeProvider } from "styled-components"
 import {
   FontAwesomeIconContainer,
   DefaultButton,
-  theme
+  styles
 } from "../styles/Buttons"
 import { Container } from "../styles/Container"
 
 /**
  * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
  */
-
-const styles = {
-  google: "#dd4b39",
-  facebook: "#3b5998",
-  linkedin: "#005983",
-  orcid: "#a6ce39"
-}
 
 const generateLoginButtons = buttons => {
   return buttons.map((name, i) => (
@@ -39,19 +32,19 @@ const generateLoginButtons = buttons => {
 
 const Login = ({ buttons }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <Grid container justify="center">
-          <Grid item xs={6}>
-            <Grid container justify="center">
-              <Grid item xs={9}>
-                {generateLoginButtons(buttons)}
-              </Grid>
+    // <ThemeProvider theme={theme}>
+    <Container>
+      <Grid container justify="center">
+        <Grid item xs={6}>
+          <Grid container justify="center">
+            <Grid item xs={9}>
+              {generateLoginButtons(buttons)}
             </Grid>
           </Grid>
         </Grid>
-      </Container>
-    </ThemeProvider>
+      </Grid>
+    </Container>
+    // </ThemeProvider>
   )
 }
 

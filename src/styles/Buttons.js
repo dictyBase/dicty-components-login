@@ -18,15 +18,14 @@ export const DefaultButton = styled(Button)`
     }
   }
 `
-export const theme = {
-  google: "#dd4b39",
-  facebook: "#3b5998",
-  linkedin: "#005983",
+export const styles = {
+  google: "#DB4437",
+  facebook: "#3B5998",
+  linkedin: "#0077B5",
   orcid: "#a6ce39"
 }
 
 export const FontAwesomeIconContainer = styled.i`
-  border-right: 1px solid black;
   line-height: 45px;
   width: 45px;
   font-size: 1.8em;
