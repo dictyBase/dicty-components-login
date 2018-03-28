@@ -10,9 +10,14 @@ import {
 } from "../styles/Buttons"
 import { Container } from "../styles/Container"
 
-/**
- * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
- */
+type Props = {
+  /** List of buttons to display */
+  buttons: Array<string>,
+  /** Size as used by Material-UI. Accepts "small", "medium" or "large". */
+  size?: string,
+  /** Style of button. Accepts "flat", "raised" or "fab". */
+  variant?: string
+}
 
 const generateLoginButtons = (buttons, size, variant) => {
   return buttons.map((name, i) => (
@@ -29,15 +34,11 @@ const generateLoginButtons = (buttons, size, variant) => {
   ))
 }
 
-const Login = ({
-  buttons,
-  size,
-  variant
-}: {
-  buttons: Array<string>,
-  size: string,
-  variant: string
-}) => {
+/**
+ * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
+ */
+
+const Login = ({ buttons, size, variant }: Props) => {
   return (
     <Container>
       <Grid container justify="center">

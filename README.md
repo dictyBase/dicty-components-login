@@ -8,6 +8,8 @@
 
 React component for displaying the social login buttons in all dictyBase web applications.
 
+For more detailed documentation, run `npm run styleguide`.
+
 Installation/usage instructions coming soon.
 
 [build-badge]: https://travis-ci.org/dictyBase/dicty-components-login.svg?branch=develop

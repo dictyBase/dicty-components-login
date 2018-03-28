@@ -2,6 +2,7 @@
 import styled from "styled-components"
 import Button from "material-ui/Button"
 
+// hex codes for some of the more popular providers
 export const styles = {
   google: "#dd4b39",
   facebook: "#3b5998",
@@ -15,6 +16,7 @@ export const styles = {
   dropbox: "#007ee5"
 }
 
+// default styling for each button
 export const DefaultButton = styled(Button)`
   && {
     color: #fff;
@@ -26,6 +28,7 @@ export const DefaultButton = styled(Button)`
   }
 `
 
+// styling for the FontAwesome icon inside each button (if applicable)
 export const FontAwesomeIconContainer = styled.i`
   line-height: 40px;
   width: 40px;
