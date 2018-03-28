@@ -5,6 +5,19 @@ import Button from "material-ui/Button"
 // this export does not work with Material-UI but temporarily keeping it for reference
 // export const LinkButton = Button.withComponent("a")
 
+export const styles = {
+  google: "#dd4b39",
+  facebook: "#3b5998",
+  linkedin: "#007bb6",
+  orcid: "#a6ce39",
+  twitter: "#00aced",
+  youtube: "#bb0000",
+  instagram: "#517fa4",
+  pinterest: "#cb2027",
+  github: "#171516",
+  dropbox: "#007ee5"
+}
+
 export const DefaultButton = styled(Button)`
   && {
     color: #fff;
@@ -12,22 +25,13 @@ export const DefaultButton = styled(Button)`
     justify-content: start;
     background-color: palevioletred;
     min-height: 55px;
-
-    .google {
-      background-color: #dd4b39;
-    }
+    margin-bottom: 5px;
   }
 `
-export const styles = {
-  google: "#DB4437",
-  facebook: "#3B5998",
-  linkedin: "#0077B5",
-  orcid: "#a6ce39"
-}
 
 export const FontAwesomeIconContainer = styled.i`
-  line-height: 45px;
-  width: 45px;
+  line-height: 40px;
+  width: 40px;
   font-size: 1.8em;
   text-align: left;
 `

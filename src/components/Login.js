@@ -20,10 +20,10 @@ const generateLoginButtons = buttons => {
     <DefaultButton
       size="large"
       variant="raised"
-      style={{ backgroundColor: `${styles[name]}`, marginBottom: "5px" }}
+      style={{ backgroundColor: `${styles[name]}` }}
       key={i}>
       <FontAwesomeIconContainer>
-        <FontAwesomeIcon icon={["fab", `${name}` ? `${name}` : ""]} />
+        <FontAwesomeIcon icon={["fab", `${name}`]} />
       </FontAwesomeIconContainer>
       &nbsp; Sign in with {name}
     </DefaultButton>
