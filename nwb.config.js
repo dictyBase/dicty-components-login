@@ -25,6 +25,9 @@ module.exports = {
     umd: false
   },
   webpack: {
-    extra: eslintWebpack
+    extra: eslintWebpack,
+    html: {
+      template: "demo/src/index.html"
+    }
   }
 }

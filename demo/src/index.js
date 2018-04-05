@@ -24,7 +24,7 @@ const theme = {
   }
 }
 
-// renders Login component with buttons array as well as size/variant props for use with Material-UI
+// renders Login component with buttons array
 const Demo = () => {
   return (
     <Container>

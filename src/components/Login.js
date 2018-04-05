@@ -17,7 +17,11 @@ const generateLoginButtons = buttons => {
   return buttons.map((name, i) => (
     <Button style={{ backgroundColor: `${socialStyles[name]}` }} key={i}>
       <IconContainer>
-        <FontAwesomeIcon icon={["fab", `${name}`]} />
+        {name === "orcid" ? (
+          <i className="ai ai-orcid" />
+        ) : (
+          <FontAwesomeIcon icon={["fab", `${name}`]} />
+        )}
       </IconContainer>
       &nbsp; Sign in with {name}
     </Button>
