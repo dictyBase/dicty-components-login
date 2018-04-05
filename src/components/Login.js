@@ -1,6 +1,6 @@
 // @flow
 import React from "react"
-import { MuiThemeProvider } from "material-ui/styles"
+import { MuiThemeProvider, createMuiTheme } from "material-ui/styles"
 import Button from "material-ui/Button"
 import FontAwesomeIcon from "@fortawesome/react-fontawesome"
 import brands from "@fortawesome/fontawesome-free-brands"
@@ -29,8 +29,9 @@ const generateLoginButtons = buttons => {
  */
 
 const Login = ({ buttons, theme }: Props) => {
+  const newTheme = createMuiTheme(theme)
   return (
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={newTheme}>
       {generateLoginButtons(buttons)}
     </MuiThemeProvider>
   )

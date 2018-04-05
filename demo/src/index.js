@@ -1,6 +1,5 @@
 import React from "react"
 import { render } from "react-dom"
-import { createMuiTheme } from "material-ui/styles"
 import Grid from "material-ui/Grid"
 import Login from "../../src/components/Login"
 import { Container } from "../../src/styles/Container"
@@ -8,12 +7,12 @@ import { Container } from "../../src/styles/Container"
 // array of buttons to display
 const buttons = ["orcid", "google", "linkedin", "facebook"]
 
-const theme = createMuiTheme({
+const theme = {
   overrides: {
     MuiButton: {
-      // Name of the styleSheet
+      // name of the styleSheet
       root: {
-        // Name of the rule
+        // name of the rule
         borderRadius: 3,
         color: "white",
         width: "80%",
@@ -23,7 +22,7 @@ const theme = createMuiTheme({
       }
     }
   }
-})
+}
 
 // renders Login component with buttons array as well as size/variant props for use with Material-UI
 const Demo = () => {
