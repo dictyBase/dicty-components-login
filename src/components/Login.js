@@ -29,7 +29,7 @@ const generateLoginButtons = buttons => {
 }
 
 /**
- * This is the main login component that generates the user-specified social buttons and puts them all in a vertical column.
+ * This is the main login component that generates the user-specified social buttons with an optional custom theme.
  */
 
 const Login = ({ buttons, theme }: Props) => {
