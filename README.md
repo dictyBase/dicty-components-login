@@ -12,7 +12,7 @@ For an example of the Login component, run `npm run styleguide`. To run the demo
 
 ## Usage
 
-`import { Login } from "dicty-components-login`
+`import { Login } from "dicty-components-login"`
 
 ## Notes
 
