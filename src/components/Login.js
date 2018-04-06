@@ -40,10 +40,11 @@ const generateLoginButtons = (buttons, onClick) => {
  */
 
 const Login = ({ buttons, theme, onClick }: Props) => {
+  // $FlowFixMe
   const newTheme = createMuiTheme(theme)
   return (
     <MuiThemeProvider theme={newTheme}>
-      {generateLoginButtons(buttons, onClick)}
+      <div>{generateLoginButtons(buttons, onClick)}</div>
     </MuiThemeProvider>
   )
 }
