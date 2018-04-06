@@ -13,9 +13,14 @@ type Props = {
   theme: Object
 }
 
-const generateLoginButtons = buttons => {
+const generateLoginButtons = (buttons, onClick) => {
   return buttons.map((name, i) => (
-    <Button style={{ backgroundColor: `${socialStyles[name]}` }} key={i}>
+    <Button
+      style={{ backgroundColor: `${socialStyles[name]}` }}
+      onClick={() => {
+        onClick(name)
+      }}
+      key={i}>
       <IconContainer>
         {name === "orcid" ? (
           <i className="ai ai-orcid" />
@@ -32,11 +37,11 @@ const generateLoginButtons = buttons => {
  * This is the main login component that generates the user-specified social buttons with an optional custom theme.
  */
 
-const Login = ({ buttons, theme }: Props) => {
+const Login = ({ buttons, theme, onClick }: Props) => {
   const newTheme = createMuiTheme(theme)
   return (
     <MuiThemeProvider theme={newTheme}>
-      {generateLoginButtons(buttons)}
+      {generateLoginButtons(buttons, onClick)}
     </MuiThemeProvider>
   )
 }

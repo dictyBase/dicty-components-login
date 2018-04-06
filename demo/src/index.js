@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { render } from "react-dom"
 import Grid from "material-ui/Grid"
 import Login from "../../src/components/Login"
@@ -25,20 +25,30 @@ const theme = {
 }
 
 // renders Login component with buttons array
-const Demo = () => {
-  return (
-    <Container>
-      <Grid container justify="center">
-        <Grid item xs={9} sm={9} md={6} lg={6}>
-          <Grid container justify="center">
-            <Grid item xs={9}>
-              <Login buttons={buttons} theme={theme} />
+class Demo extends Component {
+  handleClick = name => {
+    alert(`You clicked ${name}`)
+    console.log(`You clicked ${name}`)
+  }
+  render() {
+    return (
+      <Container>
+        <Grid container justify="center">
+          <Grid item xs={9} sm={9} md={6} lg={6}>
+            <Grid container justify="center">
+              <Grid item xs={9}>
+                <Login
+                  buttons={buttons}
+                  theme={theme}
+                  onClick={this.handleClick}
+                />
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </Container>
-  )
+      </Container>
+    )
+  }
 }
 
 render(<Demo />, document.querySelector("#demo"))
