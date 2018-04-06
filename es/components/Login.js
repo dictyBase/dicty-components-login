@@ -45,11 +45,16 @@ var Login = function Login(_ref) {
       theme = _ref.theme,
       onClick = _ref.onClick;
 
+  // $FlowFixMe
   var newTheme = createMuiTheme(theme);
   return React.createElement(
     MuiThemeProvider,
     { theme: newTheme },
-    generateLoginButtons(buttons, onClick)
+    React.createElement(
+      "div",
+      null,
+      generateLoginButtons(buttons, onClick)
+    )
   );
 };
 
