@@ -10,7 +10,9 @@ type Props = {
   /** List of buttons to display */
   buttons: Array<string>,
   /** Custom theme for MuiThemeProvider */
-  theme: Object
+  theme?: Object,
+  /** Action to take after user clicks button */
+  onClick: Function
 }
 
 const generateLoginButtons = (buttons, onClick) => {

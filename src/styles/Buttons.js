@@ -1,6 +1,5 @@
 // @flow
 import styled from "styled-components"
-import Button from "material-ui/Button"
 
 // hex codes for some of the more popular providers
 export const socialStyles = {
@@ -15,18 +14,6 @@ export const socialStyles = {
   github: "#171516",
   dropbox: "#007ee5"
 }
-
-// default styling for each button
-export const DefaultButton = styled(Button)`
-  && {
-    color: #fff;
-    width: 80%;
-    justify-content: start;
-    background-color: palevioletred;
-    min-height: 55px;
-    margin-bottom: 5px;
-  }
-`
 
 // styling for the icon inside each button (if applicable)
 export const IconContainer = styled.i`

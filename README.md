@@ -8,9 +8,31 @@
 
 React component for displaying the social login buttons in all dictyBase web applications.
 
-For more detailed documentation, run `npm run styleguide`.
+For an example of the Login component, run `npm run styleguide`. To run the demo, run `npm start`.
 
-Installation/usage instructions coming soon.
+## Usage
+
+`import { Login } from "dicty-components-login`
+
+## Notes
+
+When passing in a custom theme, there is no need to include the `createMuiTheme` wrapper. Just write the theme as a standalone object in this format:
+
+```
+const theme = {
+  overrides: {
+    MuiButton: {
+      // name of the stylesheet
+      root: {
+        // name of the rule
+        color: "white" // etc
+      }
+    }
+  }
+}
+```
+
+See demo and `styleguide` for more information.
 
 [build-badge]: https://travis-ci.org/dictyBase/dicty-components-login.svg?branch=develop
 [build]: https://travis-ci.org/dictyBase/dicty-components-login
