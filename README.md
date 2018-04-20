@@ -14,6 +14,14 @@ For an example of the Login component, run `npm run styleguide`. To run the demo
 
 `import { Login } from "dicty-components-login"`
 
+This component expects three props to be passed:
+
+* `buttons`: an array of buttons to display
+* `theme`: an object for a custom theme for MuiThemeProvider
+* `onClick`: the action to take when the user clicks a button
+
+For example, `<Login buttons={buttons} theme={theme} onClick={this.handleClick} />`
+
 ## Notes
 
 When passing in a custom theme, there is no need to include the `createMuiTheme` wrapper. Just write the theme as a standalone object in this format:
@@ -30,6 +38,37 @@ const theme = {
     }
   }
 }
+```
+
+### Suggested Theme
+
+```
+const theme = {
+  overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: 3,
+        color: "white",
+        width: "80%",
+        justifyContent: "start",
+        minHeight: "55px",
+        marginBottom: "5px"
+      }
+    }
+  }
+}
+```
+
+### Suggested Buttons
+
+`const buttons = ["orcid", "google", "linkedin"]`
+
+### Suggested click handler
+
+```
+handleClick = name => {
+    \\ do something
+  }
 ```
 
 See demo and `styleguide` for more information.
