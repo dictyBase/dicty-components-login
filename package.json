@@ -35,10 +35,9 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "@fortawesome/fontawesome-free-brands": "^5.0.8",
-    "@fortawesome/react-fontawesome": "0.0.18",
+    "font-awesome": "^4.7.0",
     "material-ui": "^1.0.0-beta.38",
+    "react-fontawesome": "^1.6.1",
     "styled-components": "^2.4.0",
     "typeface-roboto": "0.0.54"
   },
@@ -58,14 +57,14 @@
     "eslint-plugin-react": "^7.0.1",
     "flow-bin": "^0.73.0",
     "husky": "^0.14.3",
-    "jest": "^22.4.2",
-    "lint-staged": "^7.0.0",
+    "jest": "^23.1.0",
+    "lint-staged": "^7.0.5",
     "nwb": "0.21.x",
     "prettier": "^1.11.1",
     "react": "^15.6.2",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^15.6.2",
-    "react-styleguidist": "^7.0.4",
+    "react-styleguidist": "^7.0.17",
     "react-test-renderer": "^15.6.2"
   },
   "author": "",
