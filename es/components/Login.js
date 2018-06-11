@@ -1,6 +1,6 @@
 import React from "react"
-import { MuiThemeProvider, createMuiTheme } from "material-ui/styles"
-import Button from "material-ui/Button"
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import Button from "@material-ui/core/Button"
 import FontAwesome from "react-fontawesome"
 import { IconContainer, socialStyles } from "../styles/Buttons"
 import "font-awesome/css/font-awesome.min.css"
