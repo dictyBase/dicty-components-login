@@ -4,12 +4,10 @@
   "description": "React component for login in dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "engines": {
+    "node": "10.4.0"
+  },
+  "files": ["css", "es", "lib", "umd"],
   "lint-staged": {
     "*.{js,jsx,json,css}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
@@ -18,7 +16,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
@@ -28,9 +27,7 @@
     }
   },
   "babel": {
-    "presets": [
-      "react-app"
-    ]
+    "presets": ["react-app"]
   },
   "scripts": {
     "build": "nwb build-react-component",
@@ -83,7 +80,5 @@
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-login.git"
   },
-  "keywords": [
-    "react-component"
-  ]
+  "keywords": ["react-component"]
 }
