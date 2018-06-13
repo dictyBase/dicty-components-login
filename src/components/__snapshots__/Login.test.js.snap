@@ -3,7 +3,7 @@
 exports[`matching a snapshot of Login 1`] = `
 <div>
   <button
-    className="MuiButtonBase-root-16 MuiButton-root-1"
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -38,11 +38,11 @@ exports[`matching a snapshot of Login 1`] = `
       orcid
     </span>
     <span
-      className="MuiTouchRipple-root-19"
+      className="MuiTouchRipple-root-26"
     />
   </button>
   <button
-    className="MuiButtonBase-root-16 MuiButton-root-1"
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -78,11 +78,11 @@ exports[`matching a snapshot of Login 1`] = `
       google
     </span>
     <span
-      className="MuiTouchRipple-root-19"
+      className="MuiTouchRipple-root-26"
     />
   </button>
   <button
-    className="MuiButtonBase-root-16 MuiButton-root-1"
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -118,11 +118,11 @@ exports[`matching a snapshot of Login 1`] = `
       linkedin
     </span>
     <span
-      className="MuiTouchRipple-root-19"
+      className="MuiTouchRipple-root-26"
     />
   </button>
   <button
-    className="MuiButtonBase-root-16 MuiButton-root-1"
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -158,7 +158,7 @@ exports[`matching a snapshot of Login 1`] = `
       facebook
     </span>
     <span
-      className="MuiTouchRipple-root-19"
+      className="MuiTouchRipple-root-26"
     />
   </button>
 </div>
