@@ -3,7 +3,7 @@ import Login from "./Login"
 import renderer from "react-test-renderer"
 
 jest.mock("react-dom", () => ({
-  findDOMNode: () => ({})
+  findDOMNode: () => ({}),
 }))
 
 const buttons = ["orcid", "google", "linkedin", "facebook"]

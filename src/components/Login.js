@@ -1,10 +1,10 @@
 // @flow
 import React from "react"
-import { MuiThemeProvider, createMuiTheme } from "material-ui/styles"
-import Button from "material-ui/Button"
-import FontAwesomeIcon from "@fortawesome/react-fontawesome"
-import brands from "@fortawesome/fontawesome-free-brands"
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import Button from "@material-ui/core/Button"
+import FontAwesome from "react-fontawesome"
 import { IconContainer, socialStyles } from "../styles/Buttons"
+import "font-awesome/css/font-awesome.min.css"
 
 type Props = {
   /** List of buttons to display */
@@ -12,7 +12,7 @@ type Props = {
   /** Custom theme for MuiThemeProvider */
   theme?: Object,
   /** Action to take after user clicks button */
-  onClick: Function
+  onClick: Function,
 }
 
 const generateLoginButtons = (buttons, onClick) => {
@@ -27,7 +27,7 @@ const generateLoginButtons = (buttons, onClick) => {
         {name === "orcid" ? (
           <i className="ai ai-orcid" />
         ) : (
-          <FontAwesomeIcon icon={["fab", `${name}`]} />
+          <FontAwesome name={name} />
         )}
       </IconContainer>
       &nbsp; Sign in with {name}

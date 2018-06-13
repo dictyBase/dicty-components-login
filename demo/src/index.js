@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
-import Grid from "material-ui/Grid"
+import Grid from "@material-ui/core/Grid"
 import Login from "../../src/components/Login"
 import { Container } from "../../src/styles/Container"
 
@@ -18,10 +18,10 @@ const theme = {
         width: "80%",
         justifyContent: "start",
         minHeight: "55px",
-        marginBottom: "5px"
-      }
-    }
-  }
+        marginBottom: "5px",
+      },
+    },
+  },
 }
 
 // renders Login component with buttons array

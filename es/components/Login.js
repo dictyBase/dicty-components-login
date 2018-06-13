@@ -1,9 +1,9 @@
 import React from "react";
-import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
-import Button from "material-ui/Button";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import brands from "@fortawesome/fontawesome-free-brands";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import FontAwesome from "react-fontawesome";
 import { IconContainer, socialStyles } from "../styles/Buttons";
+import "font-awesome/css/font-awesome.min.css";
 
 var generateLoginButtons = function generateLoginButtons(buttons, onClick) {
   return buttons.map(function (name, i) {
@@ -28,7 +28,7 @@ var generateLoginButtons = function generateLoginButtons(buttons, onClick) {
       React.createElement(
         IconContainer,
         null,
-        name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: ["fab", "" + name] })
+        name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesome, { name: name })
       ),
       "\xA0 Sign in with ",
       name
