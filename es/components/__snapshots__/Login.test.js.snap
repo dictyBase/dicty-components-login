@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of Login 1`] = `
+<div>
+  <button
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#a6ce39",
+      }
+    }
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-2"
+    >
+      <i
+        className="sc-bdVaJa fjJPcf"
+      >
+        <i
+          className="ai ai-orcid"
+        />
+      </i>
+        Sign in with 
+      orcid
+    </span>
+    <span
+      className="MuiTouchRipple-root-26"
+    />
+  </button>
+  <button
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#dd4b39",
+      }
+    }
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-2"
+    >
+      <i
+        className="sc-bdVaJa fjJPcf"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-google"
+        />
+      </i>
+        Sign in with 
+      google
+    </span>
+    <span
+      className="MuiTouchRipple-root-26"
+    />
+  </button>
+  <button
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#007bb6",
+      }
+    }
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-2"
+    >
+      <i
+        className="sc-bdVaJa fjJPcf"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-linkedin"
+        />
+      </i>
+        Sign in with 
+      linkedin
+    </span>
+    <span
+      className="MuiTouchRipple-root-26"
+    />
+  </button>
+  <button
+    className="MuiButtonBase-root-23 MuiButton-root-1 MuiButton-flat-5"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#3b5998",
+      }
+    }
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-2"
+    >
+      <i
+        className="sc-bdVaJa fjJPcf"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-facebook"
+        />
+      </i>
+        Sign in with 
+      facebook
+    </span>
+    <span
+      className="MuiTouchRipple-root-26"
+    />
+  </button>
+</div>
+`;
