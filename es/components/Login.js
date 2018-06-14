@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import FontAwesome from "react-fontawesome";
 import { IconContainer, socialStyles } from "../styles/Buttons";
 import "font-awesome/css/font-awesome.min.css";
+import "../academicons/css/academicons.min.css";
 
 var generateLoginButtons = function generateLoginButtons(buttons, onClick) {
   return buttons.map(function (name, i) {
