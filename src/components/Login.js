@@ -16,8 +16,8 @@ type Props = {
   onClick: Function,
 }
 
-const generateLoginButtons = (buttons, onClick) => {
-  return buttons.map((name, i) => (
+const generateLoginButtons = (buttons, onClick) =>
+  buttons.map((name, i) => (
     <Button
       style={{ backgroundColor: `${socialStyles[name]}` }}
       onClick={() => {
@@ -34,7 +34,6 @@ const generateLoginButtons = (buttons, onClick) => {
       &nbsp; Sign in with {name}
     </Button>
   ))
-}
 
 /**
  * This is the main login component that generates the user-specified social buttons with an optional custom theme.

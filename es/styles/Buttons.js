@@ -1,8 +1,4 @@
-var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 15%;\n  font-size: 1.8em;\n  text-align: left;\n"], ["\n  width: 15%;\n  font-size: 1.8em;\n  text-align: left;\n"]);
-
-function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
-
-import styled from "styled-components";
+import { styled } from "@material-ui/styles";
 
 // hex codes for some of the more popular providers
 export var socialStyles = {
@@ -18,4 +14,8 @@ export var socialStyles = {
   dropbox: "#007ee5"
 
   // styling for the icon inside each button (if applicable)
-};export var IconContainer = styled.i(_templateObject);
+};export var IconContainer = styled("i")({
+  width: "15%",
+  fontSize: "1.8em",
+  textAlign: "center"
+});

@@ -1,8 +1,14 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
 import Grid from "@material-ui/core/Grid"
+import { styled } from "@material-ui/styles"
 import Login from "../../src/components/Login"
-import { Container } from "../../src/styles/Container"
+import "typeface-roboto"
+
+const Container = styled("div")({
+  fontFamily: "roboto",
+  textAlign: "center",
+})
 
 // array of buttons to display
 const buttons = ["orcid", "google", "linkedin", "facebook"]
