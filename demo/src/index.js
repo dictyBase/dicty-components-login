@@ -16,7 +16,7 @@ class Demo extends Component {
   render() {
     return (
       <Grid container justify="center">
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <center>
             <h1>Log in</h1>
           </center>

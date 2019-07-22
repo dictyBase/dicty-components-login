@@ -48,7 +48,7 @@ var Login = function Login(_ref) {
         React.createElement(
           IconContainer,
           null,
-          name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: ["fab", name2Icon[name]] })
+          name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: name2Icon[name] })
         ),
         "\xA0 Sign in with ",
         name

@@ -52,7 +52,7 @@ const Login = ({ buttons, onClick }: Props) => (
           {name === "orcid" ? (
             <i className="ai ai-orcid" />
           ) : (
-            <FontAwesomeIcon icon={["fab", name2Icon[name]]} />
+            <FontAwesomeIcon icon={name2Icon[name]} />
           )}
         </IconContainer>
         &nbsp; Sign in with {name}
