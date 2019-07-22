@@ -1,34 +1,11 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
 import Grid from "@material-ui/core/Grid"
-import { styled } from "@material-ui/styles"
 import Login from "../../src/components/Login"
 import "typeface-roboto"
 
-const Container = styled("div")({
-  fontFamily: "roboto",
-  textAlign: "center",
-})
-
 // array of buttons to display
 const buttons = ["orcid", "google", "linkedin", "facebook"]
-
-const theme = {
-  overrides: {
-    MuiButton: {
-      // name of the styleSheet
-      root: {
-        // name of the rule
-        borderRadius: 3,
-        color: "white",
-        width: "80%",
-        justifyContent: "start",
-        minHeight: "55px",
-        marginBottom: "5px",
-      },
-    },
-  },
-}
 
 // renders Login component with buttons array
 class Demo extends Component {
@@ -38,21 +15,20 @@ class Demo extends Component {
   }
   render() {
     return (
-      <Container>
-        <Grid container justify="center">
-          <Grid item xs={9} sm={9} md={6} lg={6}>
-            <Grid container justify="center">
-              <Grid item xs={9}>
-                <Login
-                  buttons={buttons}
-                  theme={theme}
-                  onClick={this.handleClick}
-                />
-              </Grid>
+      <Grid container justify="center">
+        <Grid item xs={8}>
+          <center>
+            <h1>Log in</h1>
+          </center>
+          <Grid container style={{ textAlign: "center" }}>
+            <Grid item xs={1} md={3} />
+            <Grid item xs={10} md={6}>
+              <Login buttons={buttons} onClick={this.handleClick} />
             </Grid>
+            <Grid item xs={1} md={3} />
           </Grid>
         </Grid>
-      </Container>
+      </Grid>
     )
   }
 }

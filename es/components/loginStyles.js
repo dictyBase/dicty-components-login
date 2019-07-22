@@ -10,7 +10,6 @@ export var socialButtonColors = {
   twitter: "#00aced",
   youtube: "#bb0000",
   instagram: "#517fa4",
-  pinterest: "#cb2027",
   github: "#171516",
   dropbox: "#007ee5"
 };

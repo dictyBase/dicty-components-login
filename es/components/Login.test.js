@@ -2,7 +2,7 @@ import React from "react"
 import { shallow, configure } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 import Login from "./Login"
-import Button from "@material-ui/core/Button"
+import { StyledButton } from "./loginStyles"
 
 configure({ adapter: new Adapter() })
 
@@ -15,11 +15,8 @@ describe("Login", () => {
     it("renders without crashing", () => {
       expect(wrapper).toHaveLength(1)
     })
-    it("always renders one div element", () => {
-      expect(wrapper.find("div")).toHaveLength(1)
-    })
     it("renders expected number of buttons based on props", () => {
-      expect(wrapper.find(Button)).toHaveLength(4)
+      expect(wrapper.find(StyledButton)).toHaveLength(4)
     })
   })
 })

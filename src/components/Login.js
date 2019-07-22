@@ -1,6 +1,5 @@
 // @flow
-import React from "react"
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import React, { Fragment } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGoogle,
@@ -36,37 +35,30 @@ type Props = {
   onClick: Function,
 }
 
-const generateLoginButtons = (buttons, onClick) =>
-  buttons.map((name, i) => (
-    <StyledButton
-      style={{ backgroundColor: `${socialButtonColors[name]}` }}
-      onClick={() => {
-        onClick(name)
-      }}
-      key={i}>
-      <IconContainer>
-        {name === "orcid" ? (
-          <i className="ai ai-orcid" />
-        ) : (
-          <FontAwesomeIcon icon={name2Icon[name]} />
-        )}
-      </IconContainer>
-      &nbsp; Sign in with {name}
-    </StyledButton>
-  ))
-
 /**
- * This is the main login component that generates the user-specified social buttons with an optional custom theme.
+ * This is the main login component that generates the user-specified social buttons.
  */
 
-const Login = ({ buttons, theme, onClick }: Props) => {
-  // $FlowFixMe
-  const newTheme = createMuiTheme(theme)
-  return (
-    <MuiThemeProvider theme={newTheme}>
-      <div>{generateLoginButtons(buttons, onClick)}</div>
-    </MuiThemeProvider>
-  )
-}
+const Login = ({ buttons, onClick }: Props) => (
+  <Fragment>
+    {buttons.map((name, i) => (
+      <StyledButton
+        style={{ backgroundColor: `${socialButtonColors[name]}` }}
+        onClick={() => {
+          onClick(name)
+        }}
+        key={i}>
+        <IconContainer>
+          {name === "orcid" ? (
+            <i className="ai ai-orcid" />
+          ) : (
+            <FontAwesomeIcon icon={["fab", name2Icon[name]]} />
+          )}
+        </IconContainer>
+        &nbsp; Sign in with {name}
+      </StyledButton>
+    ))}
+  </Fragment>
+)
 
 export default Login
