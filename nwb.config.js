@@ -7,27 +7,27 @@ var eslintWebpack = {
         use: [
           {
             options: {
-              formatter: require("react-dev-utils/eslintFormatter")
+              formatter: require("react-dev-utils/eslintFormatter"),
             },
-            loader: require.resolve("eslint-loader")
-          }
+            loader: "eslint-loader",
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
-  }
+        exclude: /node_modules/,
+      },
+    ],
+  },
 }
 
 module.exports = {
   type: "react-component",
   npm: {
     esModules: true,
-    umd: false
+    umd: false,
   },
   webpack: {
     extra: eslintWebpack,
     html: {
-      template: "demo/src/index.html"
-    }
-  }
+      template: "demo/src/index.html",
+    },
+  },
 }

@@ -29,7 +29,13 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      [
+        "react-app",
+        {
+          "flow": true,
+          "typescript": false
+        }
+      ]
     ]
   },
   "scripts": {
@@ -57,28 +63,30 @@
   },
   "devDependencies": {
     "@semantic-release/git": "^7.0.16",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^23.0.1",
-    "babel-preset-react-app": "^3.1.1",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react-app": "^9.0.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "^4.13.0",
-    "eslint-config-react-app": "^2.1.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-flowtype": "^2.49.3",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.9.1",
-    "flow-bin": "^0.81.0",
+    "eslint": "^5.16.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "flow-bin": "^0.100.0",
     "husky": "^2.4.0",
-    "jest": "^23.1.0",
+    "jest": "^24.8.0",
+    "jss": "^9.8.7",
     "lint-staged": "^8.2.0",
     "nwb": "^0.23.0",
-    "prettier": "^1.13.5",
+    "prettier": "^1.17.1",
     "react": "^16.8.6",
-    "react-dev-utils": "^5.0.1",
+    "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "react-styleguidist": "^9.1.6",
     "react-test-renderer": "^16.8.6",
