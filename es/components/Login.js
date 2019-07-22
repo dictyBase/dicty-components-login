@@ -1,17 +1,28 @@
 import React from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import FontAwesome from "react-fontawesome";
-import { IconContainer, socialStyles } from "../styles/Buttons";
-import "font-awesome/css/font-awesome.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle, faFacebookF, faLinkedinIn, faTwitter, faYoutube, faInstagram, faGithubAlt, faDropbox } from "@fortawesome/free-brands-svg-icons";
+import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles";
 import "../academicons/css/academicons.min.css";
+
+// convert names to desired fontawesome icon name
+var name2Icon = {
+  google: faGoogle,
+  facebook: faFacebookF,
+  linkedin: faLinkedinIn,
+  twitter: faTwitter,
+  youtube: faYoutube,
+  instagram: faInstagram,
+  github: faGithubAlt,
+  dropbox: faDropbox
+};
 
 var generateLoginButtons = function generateLoginButtons(buttons, onClick) {
   return buttons.map(function (name, i) {
     return React.createElement(
-      Button,
+      StyledButton,
       {
-        style: { backgroundColor: "" + socialStyles[name] },
+        style: { backgroundColor: "" + socialButtonColors[name] },
         onClick: function (_onClick) {
           function onClick() {
             return _onClick.apply(this, arguments);
@@ -29,7 +40,7 @@ var generateLoginButtons = function generateLoginButtons(buttons, onClick) {
       React.createElement(
         IconContainer,
         null,
-        name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesome, { name: name })
+        name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: name2Icon[name] })
       ),
       "\xA0 Sign in with ",
       name

@@ -1,11 +1,31 @@
 // @flow
 import React from "react"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
-import Button from "@material-ui/core/Button"
-import FontAwesome from "react-fontawesome"
-import { IconContainer, socialStyles } from "../styles/Buttons"
-import "font-awesome/css/font-awesome.min.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGoogle,
+  faFacebookF,
+  faLinkedinIn,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+  faGithubAlt,
+  faDropbox,
+} from "@fortawesome/free-brands-svg-icons"
+import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles"
 import "../academicons/css/academicons.min.css"
+
+// convert names to desired fontawesome icon name
+const name2Icon = {
+  google: faGoogle,
+  facebook: faFacebookF,
+  linkedin: faLinkedinIn,
+  twitter: faTwitter,
+  youtube: faYoutube,
+  instagram: faInstagram,
+  github: faGithubAlt,
+  dropbox: faDropbox,
+}
 
 type Props = {
   /** List of buttons to display */
@@ -18,8 +38,8 @@ type Props = {
 
 const generateLoginButtons = (buttons, onClick) =>
   buttons.map((name, i) => (
-    <Button
-      style={{ backgroundColor: `${socialStyles[name]}` }}
+    <StyledButton
+      style={{ backgroundColor: `${socialButtonColors[name]}` }}
       onClick={() => {
         onClick(name)
       }}
@@ -28,11 +48,11 @@ const generateLoginButtons = (buttons, onClick) =>
         {name === "orcid" ? (
           <i className="ai ai-orcid" />
         ) : (
-          <FontAwesome name={name} />
+          <FontAwesomeIcon icon={name2Icon[name]} />
         )}
       </IconContainer>
       &nbsp; Sign in with {name}
-    </Button>
+    </StyledButton>
   ))
 
 /**
