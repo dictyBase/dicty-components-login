@@ -1,7 +1,7 @@
 {
   "name": "dicty-components-login",
-  "version": "1.4.0",
-  "description": "React component for login in dictyBase web applications",
+  "version": "0.0.0-semantically-released",
+  "description": "React library that displays login buttons for dictyBase web applications",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -40,7 +40,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "cz": "git-cz",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@material-ui/core": "^1.2.1",
@@ -53,9 +55,12 @@
     "react": "15.x || 16.x"
   },
   "devDependencies": {
+    "@semantic-release/git": "^7.0.16",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^23.0.1",
     "babel-preset-react-app": "^3.1.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^4.13.0",
@@ -75,7 +80,8 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.8.6",
     "react-styleguidist": "^9.1.6",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "semantic-release": "^15.13.18"
   },
   "license": "MIT",
   "repository": {
@@ -84,5 +90,20 @@
   },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "noCi": true,
+    "tagFormat": "${version}",
+    "verifyConditions": [
+      "@semantic-release/git"
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ]
+  }
 }
