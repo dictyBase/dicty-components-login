@@ -16,6 +16,11 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
@@ -60,16 +65,16 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.9.1",
-    "flow-bin": "^0.74.0",
-    "husky": "^0.14.3",
+    "flow-bin": "^0.81.0",
+    "husky": "^2.4.0",
     "jest": "^23.1.0",
-    "lint-staged": "^7.2.0",
+    "lint-staged": "^8.2.0",
     "nwb": "^0.23.0",
     "prettier": "^1.13.5",
     "react": "^16.8.6",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.8.6",
-    "react-styleguidist": "^7.0.17",
+    "react-styleguidist": "^9.1.6",
     "react-test-renderer": "^16.8.6"
   },
   "license": "MIT",
