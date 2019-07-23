@@ -35,7 +35,15 @@
           "flow": true,
           "typescript": false
         }
-      ]
+      ],
+      [
+        "@babel/env",
+        {
+          "modules": "false",
+          "useBuiltIns": "usage"
+        }
+      ],
+      "@babel/react"
     ]
   },
   "scripts": {
@@ -63,9 +71,13 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@semantic-release/git": "^7.0.16",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-react-app": "^9.0.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
