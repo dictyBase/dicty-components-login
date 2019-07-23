@@ -1,6 +1,7 @@
 // @flow
 import React, { Fragment } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faGoogle,
   faFacebookF,
@@ -14,16 +15,27 @@ import {
 import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles"
 import "../academicons/css/academicons.min.css"
 
+library.add(
+  faGoogle,
+  faFacebookF,
+  faLinkedinIn,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+  faGithubAlt,
+  faDropbox,
+)
+
 // convert names to desired fontawesome icon name
 const name2Icon = {
-  google: faGoogle,
-  facebook: faFacebookF,
-  linkedin: faLinkedinIn,
-  twitter: faTwitter,
-  youtube: faYoutube,
-  instagram: faInstagram,
-  github: faGithubAlt,
-  dropbox: faDropbox,
+  google: "google",
+  facebook: "facebook-f",
+  linkedin: "linkedin-in",
+  twitter: "twitter",
+  youtube: "youtube",
+  instagram: "instagram",
+  github: "github-alt",
+  dropbox: "dropbox",
 }
 
 type Props = {
@@ -52,7 +64,7 @@ const Login = ({ buttons, onClick }: Props) => (
           {name === "orcid" ? (
             <i className="ai ai-orcid" />
           ) : (
-            <FontAwesomeIcon icon={name2Icon[name]} />
+            <FontAwesomeIcon icon={["fab", name2Icon[name]]} />
           )}
         </IconContainer>
         &nbsp; Sign in with {name}

@@ -1,19 +1,22 @@
 import React, { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGoogle, faFacebookF, faLinkedinIn, faTwitter, faYoutube, faInstagram, faGithubAlt, faDropbox } from "@fortawesome/free-brands-svg-icons";
 import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles";
 import "../academicons/css/academicons.min.css";
 
+library.add(faGoogle, faFacebookF, faLinkedinIn, faTwitter, faYoutube, faInstagram, faGithubAlt, faDropbox);
+
 // convert names to desired fontawesome icon name
 var name2Icon = {
-  google: faGoogle,
-  facebook: faFacebookF,
-  linkedin: faLinkedinIn,
-  twitter: faTwitter,
-  youtube: faYoutube,
-  instagram: faInstagram,
-  github: faGithubAlt,
-  dropbox: faDropbox
+  google: "google",
+  facebook: "facebook-f",
+  linkedin: "linkedin-in",
+  twitter: "twitter",
+  youtube: "youtube",
+  instagram: "instagram",
+  github: "github-alt",
+  dropbox: "dropbox"
 };
 
 /**
@@ -48,7 +51,7 @@ var Login = function Login(_ref) {
         React.createElement(
           IconContainer,
           null,
-          name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: name2Icon[name] })
+          name === "orcid" ? React.createElement("i", { className: "ai ai-orcid" }) : React.createElement(FontAwesomeIcon, { icon: ["fab", name2Icon[name]] })
         ),
         "\xA0 Sign in with ",
         name
