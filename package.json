@@ -102,7 +102,7 @@
     "prettier": "^1.17.1",
     "react": "^16.10.1",
     "react-dev-utils": "^9.0.1",
-    "react-dom": "^16.10.1",
+    "react-dom": "^16.10.2",
     "react-styleguidist": "^9.1.11",
     "react-test-renderer": "^16.8.6",
     "semantic-release": "^15.13.24",
