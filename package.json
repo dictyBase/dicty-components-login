@@ -73,7 +73,7 @@
   "devDependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@semantic-release/git": "^7.0.16",
