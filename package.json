@@ -78,7 +78,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
-    "babel-preset-react-app": "^9.0.0",
+    "babel-preset-react-app": "^9.1.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
     "enzyme": "^3.11.0",
