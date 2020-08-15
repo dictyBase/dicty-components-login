@@ -99,7 +99,7 @@
     "react-styleguidist": "^11.0.8",
     "react-test-renderer": "^16.13.1",
     "semantic-release": "^17.1.1",
-    "sinon": "^9.0.2",
+    "sinon": "^9.0.3",
     "typeface-roboto": "0.0.75"
   },
   "license": "BSD-2-Clause",
