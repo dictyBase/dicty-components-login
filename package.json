@@ -96,7 +96,7 @@
     "react": "^16.13.1",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
-    "react-styleguidist": "^11.0.8",
+    "react-styleguidist": "^11.1.0",
     "react-test-renderer": "^16.13.1",
     "semantic-release": "^17.1.2",
     "sinon": "^9.0.3",
