@@ -1,5 +1,5 @@
 module.exports = {
-  styleguideDir: "docs",
+  styleguideDir: "styleguide",
   components: "src/components/*.js",
   ignore: ["src/components/*Styles.js", "src/components/*.test.js"],
   webpackConfig: {
