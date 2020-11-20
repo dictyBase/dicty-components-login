@@ -1,33 +1,19 @@
 # dicty-components-login
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](LICENSE)  
-![GitHub tag](https://img.shields.io/github/v/tag/dictyBase/dicty-components-login)  
-![GitHub action](https://github.com/dictyBase/dicty-components-login/workflows/Testing/badge.svg)
-[![codecov](https://codecov.io/gh/dictyBase/dicty-components-login/branch/develop/graph/badge.svg)](https://codecov.io/gh/dictyBase/dicty-components-login)  
-[![Dependency Status](https://david-dm.org/dictyBase/dicty-components-login/develop.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-login/develop)
-[![devDependency Status](https://david-dm.org/dictyBase/dicty-components-login/develop/dev-status.svg?style=flat-square)](https://david-dm.org/dictyBase/dicty-components-login/develop?type=dev)  
-[![Technical debt](https://badgen.net/codeclimate/tech-debt/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login/trends/technical_debt)
-[![Issues](https://badgen.net/codeclimate/issues/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login/issues)
-[![Maintainability percentage](https://badgen.net/codeclimate/maintainability-percentage/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login)  
-![Issues](https://badgen.net/github/issues/dictyBase/dicty-components-login)
-![Open Issues](https://badgen.net/github/open-issues/dictyBase/dicty-components-login)
-![Closed Issues](https://badgen.net/github/closed-issues/dictyBase/dicty-components-login)
-![Total PRS](https://badgen.net/github/prs/dictyBase/dicty-components-login)
-![Open PRS](https://badgen.net/github/open-prs/dictyBase/dicty-components-login)
-![Closed PRS](https://badgen.net/github/closed-prs/dictyBase/dicty-components-login)
-![Merged PRS](https://badgen.net/github/merged-prs/dictyBase/dicty-components-login)  
-![Commits](https://badgen.net/github/commits/dictyBase/dicty-components-login/develop)
-![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-login/develop)
-![Branches](https://badgen.net/github/branches/dictyBase/dicty-components-login)
-![Tags](https://badgen.net/github/tags/dictyBase/dicty-components-login)
-![GitHub repo size](https://img.shields.io/github/repo-size/dictyBase/dicty-components-login?style=plastic)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dictyBase/dicty-components-login?style=plastic)
-[![Lines of Code](https://badgen.net/codeclimate/loc/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login/code)  
-[![Funding](https://badgen.net/badge/NIGMS/Rex%20L%20Chisholm,dictyBase/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=9476993)
-[![Funding](https://badgen.net/badge/NIGMS/Rex%20L%20Chisholm,DSC/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=9438930)
+![GitHub tag](https://img.shields.io/github/v/tag/dictyBase/dicty-components-login)
+![GitHub action](https://github.com/dictyBase/dicty-components-login/workflows/Node%20CI%20Develop/badge.svg)  
+[![codecov](https://codecov.io/gh/dictyBase/dicty-components-login/branch/develop/graph/badge.svg)](https://codecov.io/gh/dictyBase/dicty-components-login)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dictyBase/dicty-components-login)
+[![Maintainability](https://badgen.net/codeclimate/maintainability/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login)  
+![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-login/develop)  
+[![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=10024726&icde=0)
 
 This is a React library for displaying the social login buttons in all dictyBase web applications.
 
@@ -87,6 +73,23 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Misc badges
+
+![Issues](https://badgen.net/github/issues/dictyBase/dicty-components-login)
+![Open Issues](https://badgen.net/github/open-issues/dictyBase/dicty-components-login)
+![Closed Issues](https://badgen.net/github/closed-issues/dictyBase/dicty-components-login)  
+![Total PRS](https://badgen.net/github/prs/dictyBase/dicty-components-login)
+![Open PRS](https://badgen.net/github/open-prs/dictyBase/dicty-components-login)
+![Closed PRS](https://badgen.net/github/closed-prs/dictyBase/dicty-components-login)
+![Merged PRS](https://badgen.net/github/merged-prs/dictyBase/dicty-components-login)  
+![Commits](https://badgen.net/github/commits/dictyBase/dicty-components-login/develop)
+![Branches](https://badgen.net/github/branches/dictyBase/dicty-components-login)
+![Tags](https://badgen.net/github/tags/dictyBase/dicty-components-login)  
+![GitHub repo size](https://img.shields.io/github/repo-size/dictyBase/dicty-components-login?style=plastic)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dictyBase/dicty-components-login?style=plastic)
+[![Lines of Code](https://badgen.net/codeclimate/loc/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login/code)
