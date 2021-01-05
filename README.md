@@ -44,12 +44,11 @@ Run the demo (`npm run start`) for an example.
 
 ## Development
 
-- Clone the `develop` branch of this repository
-- Run `npm install`
+- Clone the `develop` branch of this repository.
+- Run `yarn install`.
 - Create a new branch (i.e. `feature/foo-plugin`)
 - Complete any necessary work.
-- If creating a new plugin, there is a [guide](./documentation/bold.md) that
-  walks you through the process using the bold plugin as a guide.
+- Run `yarn build`.
 - Commit all changes and open a pull request. If all checks pass, it is ready
   to merge to `develop`.
 
