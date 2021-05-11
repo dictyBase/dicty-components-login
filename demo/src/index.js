@@ -1,35 +1,22 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
-import Grid from "@material-ui/core/Grid"
-import Login from "../../src/Login.bs"
+import Container from "@material-ui/core/Container"
+import GoogleButton from "../../src/GoogleButton.bs"
 
-// array of buttons to display
-const buttons = ["orcid", "google", "linkedin", "facebook"]
-
-// renders Login component with buttons array
-class Demo extends Component {
-  handleClick = (name) => {
+const Demo = () => {
+  const handleClick = (name) => {
     alert(`You clicked ${name}`)
     console.log(`You clicked ${name}`)
   }
-  render() {
-    return (
-      <Grid container justify="center">
-        <Grid item xs={6}>
-          <center>
-            <h1>Log in</h1>
-          </center>
-          <Grid container style={{ textAlign: "center" }}>
-            <Grid item xs={1} md={3} />
-            <Grid item xs={10} md={6}>
-              <Login buttons={buttons} onClick={this.handleClick} />
-            </Grid>
-            <Grid item xs={1} md={3} />
-          </Grid>
-        </Grid>
-      </Grid>
-    )
-  }
+
+  return (
+    <Container maxWidth="xs">
+      <center>
+        <h1>Log in</h1>
+      </center>
+      <GoogleButton text="Sign in with Google" handleClick={handleClick} />
+    </Container>
+  )
 }
 
 render(<Demo />, document.querySelector("#demo"))
