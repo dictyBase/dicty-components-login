@@ -13,7 +13,11 @@ import {
   faGithubAlt,
   faDropbox,
 } from "@fortawesome/free-brands-svg-icons"
-import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles"
+import {
+  IconContainer,
+  socialButtonColors,
+  StyledButton,
+} from "./loginStyles.bs"
 
 library.add(
   faGoogle,
@@ -45,7 +49,7 @@ const Login = ({ buttons, onClick }: Props) => (
   <Fragment>
     {buttons.map((name, i) => (
       <StyledButton
-        style={{ backgroundColor: $socialButtonColors[name] }}
+        style={{ backgroundColor: socialButtonColors[name] }}
         onClick={() => {
           onClick(name)
         }}
