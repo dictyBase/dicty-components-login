@@ -18,7 +18,6 @@
     "react-jsx": 3
   },
   "bs-dependencies": [
-    "@rescript/react",
-    "@jsiebern/bs-material-ui"
+    "@rescript/react"
   ]
 }
