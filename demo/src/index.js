@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { render } from "react-dom"
 import Grid from "@material-ui/core/Grid"
-import Login from "../../src/components/Login"
+import Login from "../../src/Login.bs"
 import "typeface-roboto"
 
 // array of buttons to display
@@ -9,7 +9,7 @@ const buttons = ["orcid", "google", "linkedin", "facebook"]
 
 // renders Login component with buttons array
 class Demo extends Component {
-  handleClick = name => {
+  handleClick = (name) => {
     alert(`You clicked ${name}`)
     console.log(`You clicked ${name}`)
   }
