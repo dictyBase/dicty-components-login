@@ -1546,6 +1546,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@jsiebern/bs-material-ui@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@jsiebern/bs-material-ui/-/bs-material-ui-2.0.2.tgz#e3d32b482c62ae1eded4b418dd2313c25cd73639"
+  integrity sha512-L/XJ9I6PRiBMpPgrTvLih0CeAGJAGWT4MBrULef0/CDuDRR3BJHydF11LV9cn9wyNpM3ugHr7aR28e3udtTAng==
+
 "@material-ui/core@^4.11.4":
   version "4.11.4"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.11.4.tgz#4fb9fe5dec5dcf780b687e3a40cff78b2b9640a4"
