@@ -18,7 +18,8 @@ const useButtonStyles = makeStyles((theme) => ({
     }
   },
   subtitle: {
-    width: "100%"
+    width: "100%",
+    color: "#fff"
   }
 }))
 
