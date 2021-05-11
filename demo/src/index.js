@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { render } from "react-dom"
 import Grid from "@material-ui/core/Grid"
 import Login from "../../src/Login.bs"
-import "typeface-roboto"
 
 // array of buttons to display
 const buttons = ["orcid", "google", "linkedin", "facebook"]
