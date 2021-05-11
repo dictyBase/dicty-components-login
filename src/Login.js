@@ -13,7 +13,6 @@ import {
   faDropbox,
 } from "@fortawesome/free-brands-svg-icons"
 import { IconContainer, socialButtonColors, StyledButton } from "./loginStyles"
-import "../academicons/css/academicons.min.css"
 
 library.add(
   faGoogle,
