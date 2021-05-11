@@ -1,3 +1,4 @@
+%%raw(`
 import Button from "@material-ui/core/Button"
 import { styled } from "@material-ui/core/styles"
 
@@ -28,3 +29,4 @@ export const StyledButton = styled(Button)({
   minHeight: "55px",
   marginBottom: "5px",
 })
+`)

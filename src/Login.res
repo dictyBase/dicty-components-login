@@ -1,4 +1,4 @@
-// @flow
+%%raw(`
 import React, { Fragment } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -37,24 +37,14 @@ const name2Icon = {
   dropbox: "dropbox",
 }
 
-type Props = {
-  /** List of buttons to display */
-  buttons: Array<string>,
-  /** Custom theme for MuiThemeProvider */
-  theme?: Object,
-  /** Action to take after user clicks button */
-  onClick: Function,
-}
-
 /**
  * This is the main login component that generates the user-specified social buttons.
  */
-
 const Login = ({ buttons, onClick }: Props) => (
   <Fragment>
     {buttons.map((name, i) => (
       <StyledButton
-        style={{ backgroundColor: `${socialButtonColors[name]}` }}
+        style={{ backgroundColor: $socialButtonColors[name] }}
         onClick={() => {
           onClick(name)
         }}
@@ -73,3 +63,4 @@ const Login = ({ buttons, onClick }: Props) => (
 )
 
 export default Login
+`)
