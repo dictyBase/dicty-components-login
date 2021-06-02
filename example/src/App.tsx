@@ -1,21 +1,23 @@
-import React, { Component } from "react"
-import { render } from "react-dom"
+import React from "react"
 import Container from "@material-ui/core/Container"
-import GoogleButton from "../../src/GoogleButton.bs"
-import LinkedInButton from "../../src/LinkedInButton.bs"
-import OrcidButton from "../../src/OrcidButton.bs"
+import Box from "@material-ui/core/Box"
+import {
+  OrcidButton,
+  GoogleButton,
+  LinkedInButton,
+} from "dicty-components-login"
 
-const Demo = () => {
-  const handleClick = (name) => {
+const App = () => {
+  const handleClick = (name: string) => {
     alert(`You clicked ${name}`)
     console.log(`You clicked ${name}`)
   }
 
   return (
     <Container maxWidth="xs">
-      <center>
+      <Box textAlign="center">
         <h1>Log in</h1>
-      </center>
+      </Box>
       <OrcidButton text="Sign in with ORCID" handleClick={handleClick} />
       <p />
       <GoogleButton text="Sign in with Google" handleClick={handleClick} />
@@ -25,4 +27,4 @@ const Demo = () => {
   )
 }
 
-render(<Demo />, document.querySelector("#demo"))
+export default App
