@@ -28,6 +28,7 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
+    "@jsiebern/bs-material-ui": "^2.1.0",
     "@material-ui/core": "^4.11.4",
     "@rescript/react": "^0.10.3",
     "@semantic-release/changelog": "^5.0.1",
