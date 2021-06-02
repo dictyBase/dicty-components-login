@@ -1,48 +1,34 @@
-%%raw(`
-import React from "react"
-import Button from "@material-ui/core/Button"
-import SvgIcon from "@material-ui/core/SvgIcon"
-import Typography from "@material-ui/core/Typography"
-import { makeStyles } from "@material-ui/core/styles"
-import LinkedInIcon from "./icons/LinkedInIcon.bs"
-
-const useButtonStyles = makeStyles((theme) => ({
-  button: {
-    padding: theme.spacing(1.5, 3, 1.5, 3),
-    textTransform: "none",
-    backgroundColor: "#1565c0",
-    "&:hover": {
-      backgroundColor: "#1565c0"
-    }
-  },
-  subtitle: {
-    width: "100%",
-    color: "#fff"
+module Styles = %makeStyles(
+  theme => {
+    button: ReactDOM.Style.make(
+      ~paddingTop=`${theme.spacing(2)->string_of_int}px`,
+      ~paddingBottom=`${theme.spacing(2)->string_of_int}px`,
+      ~paddingLeft=`${theme.spacing(3)->string_of_int}px`,
+      ~paddingRight=`${theme.spacing(3)->string_of_int}px`,
+      ~textTransform=`none`,
+      ~backgroundColor="#1565c0",
+      (),
+    ),
+    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fff", ()),
   }
-}))
+)
 
-const LinkedInButton = ({ text, handleClick }) => {
-  const classes = useButtonStyles()
-  return (
-    <Button
-      variant="contained"
-      size="large"
-      fullWidth={true}
-      startIcon={<LinkedInIcon />}
-      className={classes.button}
-      onClick={handleClick}
-    >
-      <Typography
-        variant="h6"
-        align="center"
-        color="textSecondary"
-        className={classes.subtitle}
-      >
-        {text}
-      </Typography>
-    </Button>
-  )
+@react.component
+let make = (~text: string, ~handleClick: ReactEvent.Mouse.t => unit) => {
+  let classes = Styles.useStyles()
+
+  <MaterialUi_Button
+    variant=#Contained
+    size=#Large
+    fullWidth={true}
+    startIcon={<LinkedInIcon />}
+    className={classes.button}
+    onClick={handleClick}>
+    <MaterialUi_Typography
+      className={classes.subtitle} variant=#H6 align=#Center color=#TextSecondary>
+      {text}
+    </MaterialUi_Typography>
+  </MaterialUi_Button>
 }
 
-export default LinkedInButton
-`)
+let default = make
