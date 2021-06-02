@@ -23,5 +23,6 @@
   ],
   "ppx-flags": [
     "@jsiebern/bs-material-ui-ppx/ppx"
-  ]
+  ],
+  "external-stdlib": "@rescript/std"
 }
