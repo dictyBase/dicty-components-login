@@ -16,8 +16,10 @@ const Demo = () => {
       <center>
         <h1>Log in</h1>
       </center>
-      <OrcidButton text="Sign in with Orcid" handleClick={handleClick} />
+      <OrcidButton text="Sign in with ORCID" handleClick={handleClick} />
+      <p />
       <GoogleButton text="Sign in with Google" handleClick={handleClick} />
+      <p />
       <LinkedInButton text="Sign in with LinkedIn" handleClick={handleClick} />
     </Container>
   )
