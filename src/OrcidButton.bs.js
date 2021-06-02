@@ -2,6 +2,7 @@
 
 import * as Curry from "rescript/lib/es6/curry.js";
 import * as React from "react";
+import * as ReactDOMStyle from "@rescript/react/src/ReactDOMStyle.bs.js";
 import * as Core from "@material-ui/core";
 import * as Styles from "@material-ui/core/styles";
 import * as OrcidIcon$DictyComponentsLogin from "./icons/OrcidIcon.bs.js";
@@ -9,16 +10,19 @@ import * as OrcidIcon$DictyComponentsLogin from "./icons/OrcidIcon.bs.js";
 var useStyles = Styles.makeStyles(function (theme) {
       return {
               subtitle: {
+                color: "#fafafa",
                 width: "100%"
               },
-              button: {
-                backgroundColor: "#9ccc65",
-                paddingTop: String(Curry._1(theme.spacing, 2)) + "px",
-                paddingRight: String(Curry._1(theme.spacing, 3)) + "px",
-                paddingBottom: String(Curry._1(theme.spacing, 2)) + "px",
-                paddingLeft: String(Curry._1(theme.spacing, 3)) + "px",
-                textTransform: "none"
-              }
+              button: ReactDOMStyle.unsafeAddProp({
+                    backgroundColor: "#9ccc65",
+                    paddingTop: String(Curry._1(theme.spacing, 2)) + "px",
+                    paddingRight: String(Curry._1(theme.spacing, 3)) + "px",
+                    paddingBottom: String(Curry._1(theme.spacing, 2)) + "px",
+                    paddingLeft: String(Curry._1(theme.spacing, 3)) + "px",
+                    textTransform: "none"
+                  }, "&:hover", {
+                    backgroundColor: "#6b9b37"
+                  })
             };
     });
 

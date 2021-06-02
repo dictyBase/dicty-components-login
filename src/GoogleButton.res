@@ -1,3 +1,5 @@
+external styleToString: ReactDOM.Style.t => string = "%identity"
+
 module Styles = %makeStyles(
   theme => {
     button: ReactDOM.Style.make(
@@ -6,10 +8,13 @@ module Styles = %makeStyles(
       ~paddingLeft=`${theme.spacing(3)->string_of_int}px`,
       ~paddingRight=`${theme.spacing(3)->string_of_int}px`,
       ~textTransform=`none`,
-      ~backgroundColor="#cfd8dc",
+      ~backgroundColor="#df4b37",
       (),
+    )->ReactDOM.Style.unsafeAddProp(
+      "&:hover",
+      ReactDOM.Style.make(~backgroundColor="#a60e0e", ())->styleToString,
     ),
-    subtitle: ReactDOM.Style.make(~width="100%", ()),
+    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fafafa", ()),
   }
 )
 
