@@ -232,6 +232,11 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
+"@jsiebern/bs-material-ui-ppx@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@jsiebern/bs-material-ui-ppx/-/bs-material-ui-ppx-2.1.0.tgz#b44d083388eea7f4a19c6edbc8232c4f195b30d0"
+  integrity sha512-4O208wUEmH5b+PQB54rkznhvApsRpY9j44UQIZj9DV58jB5n/p2WJzDpU0y8KBHkhxTFhz1c908CELH7orjg8Q==
+
 "@jsiebern/bs-material-ui@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@jsiebern/bs-material-ui/-/bs-material-ui-2.1.0.tgz#70e7a8b4c3162046d0b984a4c54d64ee99f2d71a"
