@@ -2,22 +2,23 @@
   "name": "dicty-components-login",
   "version": "0.0.0-semantically-released",
   "description": "React library that displays login buttons for dictyBase web applications",
-  "main": "lib/index.js",
-  "module": "es/index.js",
   "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
+    "bsconfig.json",
+    "src"
+  ],
+  "main": "./src/index.js",
+  "keywords": [
+    "rescript",
+    "react-component"
   ],
   "private": true,
   "scripts": {
+    "re:build": "rescript",
+    "re:start": "rescript build -w",
     "start": "cd ./example && yarn start",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "semantic-release": "semantic-release",
-    "re:build": "rescript",
-    "re:start": "rescript build -w"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "bs-platform": "9.0.2"
@@ -39,6 +40,7 @@
     "@semantic-release/github": "^7.2.3",
     "@semantic-release/npm": "^7.1.3",
     "@semantic-release/release-notes-generator": "^9.0.2",
+    "gentype": "^4.1.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-styleguidist": "^11.1.6",
@@ -49,8 +51,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dictyBase/dicty-components-login.git"
-  },
-  "keywords": [
-    "react-component"
-  ]
+  }
 }
