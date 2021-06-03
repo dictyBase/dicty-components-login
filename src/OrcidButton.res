@@ -18,7 +18,7 @@ module Styles = %makeStyles(
   }
 )
 
-@react.component
+@genType @react.component
 let make = (~text: string, ~handleClick: ReactEvent.Mouse.t => unit) => {
   let classes = Styles.useStyles()
 
