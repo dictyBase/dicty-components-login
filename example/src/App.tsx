@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "@material-ui/core/Container"
 import Box from "@material-ui/core/Box"
+import Typography from "@material-ui/core/Typography"
 import {
   OrcidButton,
   GoogleButton,
@@ -8,15 +9,17 @@ import {
 } from "dicty-components-login"
 
 const App = () => {
-  const handleClick = (name: string) => {
-    alert(`You clicked ${name}`)
-    console.log(`You clicked ${name}`)
+  const handleClick = (event: MouseEvent) => {
+    alert(`You clicked the button`)
+    console.log(event)
   }
 
   return (
     <Container maxWidth="xs">
-      <Box textAlign="center">
-        <h1>Log in</h1>
+      <Box textAlign="center" mt={2}>
+        <Typography variant="h4" gutterBottom>
+          Log in
+        </Typography>
       </Box>
       <OrcidButton text="Sign in with ORCID" handleClick={handleClick} />
       <p />
