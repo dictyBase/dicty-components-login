@@ -10,20 +10,18 @@ jobs:
       - name: set up node.js
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 14.15.0
+          node-version: 14.17.0
       - name: check out code
         uses: actions/checkout@v2
       - name: install
-        run: yarn install
-      - name: eslint
-        run: yarn lint
+        run: yarn
+      - name: generate build
+        run: yarn re:build
       - name: unit tests
-        run: yarn test -- --coverage
+        run: yarn test --coverage
         env:
           CI: true
       - name: upload test coverage to codecov
         uses: codecov/codecov-action@v1.5.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-      - name: build
-        run: yarn build
