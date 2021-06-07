@@ -8,12 +8,12 @@ import {
   LinkedInButton,
 } from "dicty-components-login"
 
-const App = () => {
-  const handleClick = (event: MouseEvent, value: string) => {
-    alert(`You clicked ${value}`)
-    console.log(event)
-  }
+const handleClick = (event: MouseEvent, value: string) => {
+  alert(`You clicked ${value}`)
+  console.log(event)
+}
 
+const App = () => {
   return (
     <Container maxWidth="xs">
       <Box textAlign="center" mt={2}>
