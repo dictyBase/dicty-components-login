@@ -4,3 +4,9 @@
 /umd
 npm-debug.log*
 .DS_Store
+
+# rescript
+.bsb.lock
+.eslintcache
+.merlin
+lib
