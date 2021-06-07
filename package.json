@@ -22,6 +22,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.3",
     "bs-platform": "9.0.2"
   },
   "peerDependencies": {
@@ -34,7 +35,6 @@
     "@jsiebern/bs-material-ui": "^2.1.0",
     "@jsiebern/bs-material-ui-ppx": "^2.1.0",
     "@material-ui/core": "4.11.4",
-    "@rescript/react": "^0.10.3",
     "@rescript/std": "^9.0.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
