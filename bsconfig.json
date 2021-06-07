@@ -5,6 +5,10 @@
     {
       "dir": "src",
       "subdirs": true
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
     }
   ],
   "package-specs": [
@@ -23,6 +27,9 @@
   "bs-dependencies": [
     "@rescript/react",
     "@jsiebern/bs-material-ui"
+  ],
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest"
   ],
   "ppx-flags": [
     "@jsiebern/bs-material-ui-ppx/ppx"
