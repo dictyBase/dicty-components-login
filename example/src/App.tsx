@@ -9,8 +9,8 @@ import {
 } from "dicty-components-login"
 
 const App = () => {
-  const handleClick = (event: MouseEvent) => {
-    alert(`You clicked the button`)
+  const handleClick = (event: MouseEvent, value: string) => {
+    alert(`You clicked ${value}`)
     console.log(event)
   }
 
@@ -21,11 +21,20 @@ const App = () => {
           Log in
         </Typography>
       </Box>
-      <OrcidButton text="Sign in with ORCID" handleClick={handleClick} />
+      <OrcidButton
+        text="Sign in with ORCID"
+        handleClick={(event) => handleClick(event, "orcid")}
+      />
       <p />
-      <GoogleButton text="Sign in with Google" handleClick={handleClick} />
+      <GoogleButton
+        text="Sign in with Google"
+        handleClick={(event) => handleClick(event, "google")}
+      />
       <p />
-      <LinkedInButton text="Sign in with LinkedIn" handleClick={handleClick} />
+      <LinkedInButton
+        text="Sign in with LinkedIn"
+        handleClick={(event) => handleClick(event, "linkedin")}
+      />
     </Container>
   )
 }
