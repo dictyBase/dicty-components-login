@@ -17,6 +17,10 @@
       "in-source": true
     }
   ],
+  "warnings": {
+    "number": "+A-48-42",
+    "error": "+A-3-44-102"
+  },
   "gentypeconfig": {
     "language": "typescript"
   },
@@ -29,7 +33,9 @@
     "@jsiebern/bs-material-ui"
   ],
   "bs-dev-dependencies": [
-    "@glennsl/bs-jest"
+    "@glennsl/bs-jest",
+    "@tomvardasca/rescript-react-testing-library",
+    "bs-jest-dom"
   ],
   "ppx-flags": [
     "@jsiebern/bs-material-ui-ppx/ppx"
