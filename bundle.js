@@ -12,7 +12,12 @@ esbuild.build({
   bundle: true,
   minify: true,
   sourcemap: true,
-  target: "node14",
+  target: [
+  "chrome58",
+  "firefox55",
+  "safari12",
+  "edge15",
+  "node14"],
   format: "esm",
   define: {
 		'process.env.NODE_ENV': '"production"',
