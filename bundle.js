@@ -22,5 +22,5 @@ esbuild.build({
   define: {
 		'process.env.NODE_ENV': '"production"',
 	},
-  external: ["react", "react-dom"]
+  external: ["@material-ui/core", "react", "react-dom"]
 }).catch(() => process.exit(1))

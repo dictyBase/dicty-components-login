@@ -4200,7 +4200,6 @@
   "version" "0.0.0-semantically-released"
   dependencies:
     "@rescript/react" "^0.10.3"
-    "@rescript/std" "^9.0.1"
     "bs-platform" "9.0.2"
     "esbuild" "^0.12.7"
 
