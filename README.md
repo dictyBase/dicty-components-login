@@ -15,40 +15,35 @@
 ![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-login/develop)  
 [![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=10024726&icde=0)
 
-This is a React library for displaying the social login buttons in all dictyBase web applications.
+This is a ReScript library that generates React components for social login buttons used in 
+all dictyBase web applications.
 
 ## Usage
 
-`import { Login } from "dicty-components-login"`
+`import { GoogleButton, LinkedInButton, OrcidButton } from "dicty-components-login"`
 
 This component expects the following props to be passed:
 
-- `buttons`: an array of buttons to display
-- `onClick`: function called when the user clicks a button
+- `text`: text to display inside button
+- `handleClick`: function called when the user clicks a button
 
-For example, `<Login buttons={buttons} onClick={this.handleClick} />`
+For example, `<GoogleButton handleClick={(e) => console.log(e)} text="Login with Google"  />`
 
-### Suggested Buttons
+## Demo
 
-`const buttons = ["orcid", "google", "linkedin"]`
+There is a demo app inside the `example` that shows how to use this library in a `create-react-app` application.
 
-### Suggested click handler
+Run `yarn start` to start the demo.
 
-```
-handleClick = name => {
-    \\ do something
-  }
-```
-
-Run the demo (`npm run start`) for an example.
+If there are issues running the demo app, check its readme for possible solutions.
 
 ## Development
 
 - Clone the `develop` branch of this repository.
-- Run `yarn install`.
+- Run `yarn` to install.
 - Create a new branch (i.e. `feature/foo-plugin`)
 - Complete any necessary work.
-- Run `yarn build`.
+- Run `yarn bundle` to generate updated code and esbuild output.
 - Commit all changes and open a pull request. If all checks pass, it is ready
   to merge to `develop`.
 
