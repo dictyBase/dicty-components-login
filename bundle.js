@@ -6,10 +6,6 @@ const path = require("path")
 
 const src = path.join(__dirname, "src")
 
-const targets = fs.readdirSync(src)
-  .filter((x) => x.endsWith(".bs.js"))
-  .map((file) => path.join(src, file))
-
 esbuild.build({
   entryPoints: ["src/index.d.ts"],
   outfile: "dist/index.js",
@@ -17,6 +13,10 @@ esbuild.build({
   minifySyntax: true,
   sourcemap: true,
   target: "node14",
+  format: "esm",
+  define: {
+		'process.env.NODE_ENV': '"production"',
+	},
   // nodeExternalsPlugin automatically excludes external Node.js dependencies
   // and uses the dependencies field in package.json instead
   plugins: [nodeExternalsPlugin()]
