@@ -41,7 +41,7 @@ function OrcidButton(Props) {
                     children: text,
                     className: classes.subtitle,
                     color: "textSecondary",
-                    variant: "h6"
+                    variant: "inherit"
                   }),
               className: classes.button,
               fullWidth: true,

@@ -30,7 +30,7 @@ let make = (~text: string, ~handleClick: ReactEvent.Mouse.t => unit) => {
     className={classes.button}
     onClick={handleClick}>
     <MaterialUi_Typography
-      className={classes.subtitle} variant=#H6 align=#Center color=#TextSecondary>
+      className={classes.subtitle} variant=#Inherit align=#Center color=#TextSecondary>
       {text}
     </MaterialUi_Typography>
   </MaterialUi_Button>
