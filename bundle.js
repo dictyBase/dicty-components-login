@@ -17,7 +17,8 @@ esbuild.build({
   "firefox55",
   "safari12",
   "edge15",
-  "node14"],
+  "node14"
+  ],
   format: "esm",
   define: {
 		'process.env.NODE_ENV': '"production"',
