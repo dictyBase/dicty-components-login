@@ -1,7 +1,6 @@
 const fs = require("fs")
 const cp = require("child_process")
 const esbuild = require("esbuild")
-const { nodeExternalsPlugin } = require('esbuild-node-externals')
 const path = require("path")
 
 const src = path.join(__dirname, "src")
@@ -23,7 +22,5 @@ esbuild.build({
   define: {
 		'process.env.NODE_ENV': '"production"',
 	},
-  // nodeExternalsPlugin automatically excludes external Node.js dependencies
-  // and uses the dependencies field in package.json instead
-  plugins: [nodeExternalsPlugin()]
+  external: ["react", "react-dom"]
 }).catch(() => process.exit(1))
