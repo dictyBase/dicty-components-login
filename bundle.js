@@ -10,7 +10,7 @@ esbuild.build({
   entryPoints: ["src/index.d.ts"],
   outfile: "dist/index.js",
   bundle: true,
-  minifySyntax: true,
+  minify: true,
   sourcemap: true,
   target: "node14",
   format: "esm",
