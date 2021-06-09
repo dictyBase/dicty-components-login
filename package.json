@@ -19,8 +19,9 @@
     "re:start": "rescript build -w",
     "re:clean": "rescript clean",
     "start": "cd ./example && yarn start",
-    "semantic-release": "semantic-release",
-    "test": "jest"
+    "test": "jest",
+    "bundle": "node bundle",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@rescript/react": "^0.10.3",
