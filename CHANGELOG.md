@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/dictyBase/dicty-components-login/compare/3.2.0...4.0.0) (2021-06-09)
+
+
+### Features
+
+* remove default typography variant ([ab0538c](https://github.com/dictyBase/dicty-components-login/commit/ab0538c16f285c3e106c604398a29dd0c8c685f3))
+
+
+### BREAKING CHANGES
+
+* Typography variant is now inherited rather than explicitly stated.
+
 # [3.2.0](https://github.com/dictyBase/dicty-components-login/compare/3.1.1...3.2.0) (2021-06-09)
 
 
