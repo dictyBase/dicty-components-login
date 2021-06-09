@@ -20,7 +20,7 @@
     "re:clean": "rescript clean",
     "start": "cd ./example && yarn start",
     "test": "jest",
-    "bundle": "node bundle",
+    "bundle": "rescript && node bundle",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
