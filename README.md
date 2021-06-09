@@ -10,10 +10,9 @@
 ![GitHub tag](https://img.shields.io/github/v/tag/dictyBase/dicty-components-login)
 ![GitHub action](https://github.com/dictyBase/dicty-components-login/workflows/Node%20CI%20Develop/badge.svg)  
 [![codecov](https://codecov.io/gh/dictyBase/dicty-components-login/branch/develop/graph/badge.svg)](https://codecov.io/gh/dictyBase/dicty-components-login)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/dictyBase/dicty-components-login)
 [![Maintainability](https://badgen.net/codeclimate/maintainability/dictyBase/dicty-components-login)](https://codeclimate.com/github/dictyBase/dicty-components-login)  
 ![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-login/develop)  
-[![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://projectreporter.nih.gov/project_info_description.cfm?aid=10024726&icde=0)
+[![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://reporter.nih.gov/project-details/10024726)
 
 This is a ReScript library that generates React components for social login buttons used in 
 all dictyBase web applications.
