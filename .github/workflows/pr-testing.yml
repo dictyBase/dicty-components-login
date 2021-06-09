@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@v2
       - name: install
         run: yarn
-      - name: generate build
-        run: yarn re:build
+      - name: generate build and bundle
+        run: yarn bundle
       - name: unit tests
         run: yarn test --coverage
         env:
