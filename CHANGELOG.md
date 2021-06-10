@@ -1,3 +1,5 @@
+## [4.1.1](https://github.com/dictyBase/dicty-components-login/compare/4.1.0...4.1.1) (2021-06-10)
+
 # [4.1.0](https://github.com/dictyBase/dicty-components-login/compare/4.0.0...4.1.0) (2021-06-10)
 
 
