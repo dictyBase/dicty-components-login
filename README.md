@@ -14,7 +14,7 @@
 ![Last commit](https://badgen.net/github/last-commit/dictyBase/dicty-components-login/develop)  
 [![Funding](https://badgen.net/badge/Funding/Rex%20L%20Chisholm,dictyBase,DCR/yellow?list=|)](https://reporter.nih.gov/project-details/10024726)
 
-This is a ReScript library that generates React components for social login buttons used in 
+This is a ReScript library that generates React components for social login buttons used in
 all dictyBase web applications.
 
 ## Usage
@@ -26,7 +26,7 @@ This component expects the following props to be passed:
 - `text`: text to display inside button
 - `handleClick`: function called when the user clicks a button
 
-For example, `<GoogleButton handleClick={(e) => console.log(e)} text="Login with Google"  />`
+For example, `<GoogleButton handleClick={(e) => console.log(e)} text="Login with Google" />`
 
 ## Demo
 
@@ -45,6 +45,9 @@ If there are issues running the demo app, check its readme for possible solution
 - Run `yarn bundle` to generate updated code and esbuild output.
 - Commit all changes and open a pull request. If all checks pass, it is ready
   to merge to `develop`.
+
+For active local development, run `yarn start` to start the demo app, then run `yarn bundle`
+any time you make changes to see them in realtime.
 
 If you are ready to cut a new release, you can then merge into `master`. This
 will trigger a GitHub Action that uses `semantic-release` to create a new tag
