@@ -1,6 +1,6 @@
 {
   "name": "dicty-components-login",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "React library that displays login buttons for dictyBase web applications",
   "files": [
     "bsconfig.json",
