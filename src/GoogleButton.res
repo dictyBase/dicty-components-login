@@ -14,7 +14,7 @@ module Styles = %makeStyles(
       "&:hover",
       ReactDOM.Style.make(~backgroundColor="#a60e0e", ())->styleToString,
     ),
-    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fafafa", ()),
+    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fafafa", ~fontWeight="600", ()),
   }
 )
 

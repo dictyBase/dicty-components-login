@@ -10,18 +10,19 @@ import * as LinkedInIcon$DictyComponentsLogin from "./icons/LinkedInIcon.bs.js";
 var useStyles = Styles.makeStyles(function (theme) {
       return {
               subtitle: {
-                color: "#fafafa",
+                color: "#fff",
+                fontWeight: "600",
                 width: "100%"
               },
               button: ReactDOMStyle.unsafeAddProp({
-                    backgroundColor: "#1565c0",
+                    backgroundColor: "#2867B2",
                     paddingTop: String(Curry._1(theme.spacing, 2)) + "px",
                     paddingRight: String(Curry._1(theme.spacing, 3)) + "px",
                     paddingBottom: String(Curry._1(theme.spacing, 2)) + "px",
                     paddingLeft: String(Curry._1(theme.spacing, 3)) + "px",
                     textTransform: "none"
                   }, "&:hover", {
-                    backgroundColor: "#003c8f"
+                    backgroundColor: "#003d82"
                   })
             };
     });

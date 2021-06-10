@@ -10,18 +10,19 @@ import * as OrcidIcon$DictyComponentsLogin from "./icons/OrcidIcon.bs.js";
 var useStyles = Styles.makeStyles(function (theme) {
       return {
               subtitle: {
-                color: "#fafafa",
+                color: "#4D4D4D",
+                fontWeight: "600",
                 width: "100%"
               },
               button: ReactDOMStyle.unsafeAddProp({
-                    backgroundColor: "#9ccc65",
+                    backgroundColor: "#a6ce39",
                     paddingTop: String(Curry._1(theme.spacing, 2)) + "px",
                     paddingRight: String(Curry._1(theme.spacing, 3)) + "px",
                     paddingBottom: String(Curry._1(theme.spacing, 2)) + "px",
                     paddingLeft: String(Curry._1(theme.spacing, 3)) + "px",
                     textTransform: "none"
                   }, "&:hover", {
-                    backgroundColor: "#6b9b37"
+                    backgroundColor: "#739d00"
                   })
             };
     });
