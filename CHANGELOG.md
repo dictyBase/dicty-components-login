@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/dictyBase/dicty-components-login/compare/4.0.0...4.1.0) (2021-06-10)
+
+
+### Features
+
+* clean up colors and add font weight ([5f1f5dd](https://github.com/dictyBase/dicty-components-login/commit/5f1f5dd52fa2c2050c45061e23051ac4a6ae3b0c))
+
 # [4.0.0](https://github.com/dictyBase/dicty-components-login/compare/3.2.0...4.0.0) (2021-06-09)
 
 
