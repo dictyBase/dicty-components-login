@@ -8,13 +8,13 @@ module Styles = %makeStyles(
       ~paddingLeft=`${theme.spacing(3)->string_of_int}px`,
       ~paddingRight=`${theme.spacing(3)->string_of_int}px`,
       ~textTransform=`none`,
-      ~backgroundColor="#1565c0",
+      ~backgroundColor="#2867B2",
       (),
     )->ReactDOM.Style.unsafeAddProp(
       "&:hover",
-      ReactDOM.Style.make(~backgroundColor="#003c8f", ())->styleToString,
+      ReactDOM.Style.make(~backgroundColor="#003d82", ())->styleToString,
     ),
-    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fafafa", ()),
+    subtitle: ReactDOM.Style.make(~width="100%", ~color="#fff", ~fontWeight="600", ()),
   }
 )
 

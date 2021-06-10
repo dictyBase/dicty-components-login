@@ -11,6 +11,7 @@ var useStyles = Styles.makeStyles(function (theme) {
       return {
               subtitle: {
                 color: "#fafafa",
+                fontWeight: "600",
                 width: "100%"
               },
               button: ReactDOMStyle.unsafeAddProp({
