@@ -865,10 +865,10 @@
   resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
   integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
 
-"@rescript/std@^9.0.1":
-  version "9.1.3"
-  resolved "https://registry.yarnpkg.com/@rescript/std/-/std-9.1.3.tgz#adbefc9beae13de4c1c95d4d376c2afec2952ee6"
-  integrity sha512-bvrCBz4vkBHcJFsKI6Bu81BX/jfAPXgSeN9uec6hI23gIVCr0JH7sDy3se4RlMG1klT6LqIjBI0aGCtcSksO2A==
+"@rescript/std@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@rescript/std/-/std-10.0.1.tgz#2ffa229f3345fea3341fed4bbc9b15949cf182ba"
+  integrity sha512-cchIxAI/zVU2sITZgVWz/QOKSRDGEhGyzMTWfsZdgNf6QD9+S/CUVfS1lBqPaX9GaGy1FCWHAqGYwIIaVqAS4Q==
 
 "@semantic-release/changelog@^5.0.1":
   version "5.0.1"
